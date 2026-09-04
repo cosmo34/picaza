@@ -15,8 +15,8 @@
       id: "oculus",
       name: "Oculus",
       platforms: ["macOS", "Apple Silicon"],
-      accent: "#6EC8C0",
-      icon: "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/7e/ae/f3/7eaef3ed-e22b-1d97-cb33-8b40e960be09/AppIcon-0-0-85-220-0-5-0-2x.png/512x512bb.png",
+      accent: "#00D0C8",
+      icon: "assets/oculus-icon.png?v=20260904o",
       store: "https://apps.apple.com/fr/app/oculus/id6776262110?mt=12",
     },
   ];
@@ -36,7 +36,7 @@
     {
       id: "oculus",
       name: "Oculus",
-      icon: "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/7e/ae/f3/7eaef3ed-e22b-1d97-cb33-8b40e960be09/AppIcon-0-0-85-220-0-5-0-2x.png/512x512bb.png",
+      icon: "assets/oculus-icon.png?v=20260904o",
       shots: [
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/a7/44/c9/a744c94c-a635-7e92-00b2-f1f53e2647c4/Capture_d_U2019e_U0301cran.png/2880x1800bb.png",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/7c/fa/b6/7cfab68b-1592-37ef-82dd-b881010c4aa0/Capture_d_U2019e_U0301cran_2.png/2560x1600bb.png",
