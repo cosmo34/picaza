@@ -429,10 +429,10 @@ body.modal-open { overflow: hidden; }
 
 .hero-orbit {
   position: absolute;
-  right: 0;
+  right: 1.25rem;
   top: 12%;
-  width: min(42vw, 420px);
-  max-width: 100%;
+  width: min(40vw, 400px);
+  max-width: calc(100% - 2.5rem);
   aspect-ratio: 1;
   border-radius: 50%;
   background:
@@ -444,7 +444,7 @@ body.modal-open { overflow: hidden; }
   z-index: 0;
 }
 @media (max-width: 800px) {
-  .hero-orbit { opacity: 0.55; top: 4%; width: min(62vw, 280px); }
+  .hero-orbit { opacity: 0.55; top: 4%; right: 0.75rem; width: min(58vw, 260px); }
   .hero { align-items: center; padding-top: 5rem; }
 }
 
