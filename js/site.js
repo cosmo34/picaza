@@ -92,7 +92,6 @@
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"/><path d="M3 12h18M12 3c2.5 2.8 3.8 6 3.8 9s-1.3 6.2-3.8 9c-2.5-2.8-3.8-6-3.8-9S9.5 5.8 12 3z" stroke="currentColor" stroke-width="1.6"/></svg>
               <span id="lang-current">FR</span>
             </button>
-            <ul class="nav-dropdown lang-menu" id="lang-menu" role="listbox"></ul>
           </div>
           <div class="menu-wrap">
             <button type="button" class="icon-btn menu-btn" id="menu-toggle" aria-haspopup="true" aria-expanded="false" aria-label="Menu">
@@ -102,6 +101,9 @@
             </button>
           </div>
         </div>
+      </div>
+      <div class="sheet-menu" id="lang-menu" aria-hidden="true">
+        <div class="sheet-rail wrap" id="lang-rail" role="listbox"></div>
       </div>
       <div class="sheet-menu" id="sheet-menu" aria-hidden="true">
         <div class="sheet-rail wrap">
@@ -113,18 +115,22 @@
       </div>
     `;
 
-    const menu = document.getElementById("lang-menu");
-    Object.entries(window.PICAZA_I18N.locales).forEach(([code, label]) => {
-      const li = document.createElement("li");
-      li.role = "option";
-      li.tabIndex = 0;
-      li.dataset.locale = code;
-      li.textContent = label;
-      li.addEventListener("click", () => {
+    const rail = document.getElementById("lang-rail");
+    const locales = Object.entries(window.PICAZA_I18N.locales);
+    rail.style.setProperty("--n", String(Math.max(locales.length - 1, 0)));
+    locales.forEach(([code, label], i) => {
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "sheet-link sheet-btn";
+      btn.role = "option";
+      btn.dataset.locale = code;
+      btn.style.setProperty("--i", String(i));
+      btn.textContent = label;
+      btn.addEventListener("click", () => {
         setLocale(code);
         closeLang();
       });
-      menu.appendChild(li);
+      rail.appendChild(btn);
     });
   }
 
@@ -209,7 +215,6 @@
     sheet.classList.add("is-open");
     sheet.setAttribute("aria-hidden", "false");
     btn?.setAttribute("aria-expanded", "true");
-    document.body.classList.add("menu-open");
   }
 
   function closeMenu() {
@@ -220,7 +225,6 @@
     sheet.classList.remove("is-open");
     sheet.setAttribute("aria-hidden", "true");
     btn?.setAttribute("aria-expanded", "false");
-    document.body.classList.remove("menu-open");
     window.setTimeout(() => sheet.classList.remove("is-closing"), 420);
   }
 
@@ -236,16 +240,21 @@
     const btn = document.getElementById("lang-toggle");
     if (!menu) return;
     closeMenu();
+    menu.classList.remove("is-closing");
     menu.classList.add("is-open");
+    menu.setAttribute("aria-hidden", "false");
     btn?.setAttribute("aria-expanded", "true");
   }
 
   function closeLang() {
     const menu = document.getElementById("lang-menu");
     const btn = document.getElementById("lang-toggle");
-    if (!menu) return;
+    if (!menu || !menu.classList.contains("is-open")) return;
+    menu.classList.add("is-closing");
     menu.classList.remove("is-open");
+    menu.setAttribute("aria-hidden", "true");
     btn?.setAttribute("aria-expanded", "false");
+    window.setTimeout(() => menu.classList.remove("is-closing"), 700);
   }
 
   function toggleLang() {
@@ -339,7 +348,7 @@
         showAppsSection(true);
         closeMenu();
       }
-      if (!e.target.closest(".lang-wrap")) closeLang();
+      if (!e.target.closest(".lang-wrap") && !e.target.closest("#lang-menu")) closeLang();
       if (!e.target.closest(".menu-wrap") && !e.target.closest("#sheet-menu")) closeMenu();
     });
 
