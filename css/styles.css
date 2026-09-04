@@ -367,9 +367,10 @@ body.modal-open { overflow: hidden; }
   position: absolute;
   inset: 0;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr);
-  gap: clamp(1rem, 3vw, 2rem);
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 0.85rem;
   align-items: center;
+  justify-content: start;
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.85s var(--ease);
@@ -420,9 +421,9 @@ body.modal-open { overflow: hidden; }
   border: 1px solid var(--line);
   background: rgba(255, 255, 255, 0.03);
   aspect-ratio: 16 / 10;
+  width: min(42vw, 380px);
   max-height: min(34vh, 300px);
-  justify-self: end;
-  width: 100%;
+  justify-self: start;
 }
 .hero-slide-shot img {
   width: 100%;
