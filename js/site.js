@@ -100,14 +100,15 @@
                 <path d="M1 1h18M1 7h18M1 13h18" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/>
               </svg>
             </button>
-            <div class="nav-dropdown sheet-menu" id="sheet-menu">
-              <a class="sheet-link" href="${p}apps/viewzy.html">Viewzy</a>
-              <a class="sheet-link" href="${p}apps/oculus.html">Oculus</a>
-              <a class="sheet-link" href="${p}apps/goway.html">GOWAY</a>
-              <hr class="sheet-sep" />
-              <button type="button" class="sheet-link sheet-btn" data-open-contact data-i18n="nav_contact">Contact</button>
-            </div>
           </div>
+        </div>
+      </div>
+      <div class="sheet-menu" id="sheet-menu" aria-hidden="true">
+        <div class="sheet-rail wrap">
+          <a class="sheet-link" href="${p}apps/viewzy.html" style="--i:0">Viewzy</a>
+          <a class="sheet-link" href="${p}apps/oculus.html" style="--i:1">Oculus</a>
+          <a class="sheet-link" href="${p}apps/goway.html" style="--i:2">GOWAY</a>
+          <button type="button" class="sheet-link sheet-btn" data-open-contact data-i18n="nav_contact" style="--i:3">Contact</button>
         </div>
       </div>
     `;
@@ -183,16 +184,23 @@
     const btn = document.getElementById("menu-toggle");
     if (!sheet) return;
     closeLang();
+    sheet.classList.remove("is-closing");
     sheet.classList.add("is-open");
+    sheet.setAttribute("aria-hidden", "false");
     btn?.setAttribute("aria-expanded", "true");
+    document.body.classList.add("menu-open");
   }
 
   function closeMenu() {
     const sheet = document.getElementById("sheet-menu");
     const btn = document.getElementById("menu-toggle");
-    if (!sheet) return;
+    if (!sheet || !sheet.classList.contains("is-open")) return;
+    sheet.classList.add("is-closing");
     sheet.classList.remove("is-open");
+    sheet.setAttribute("aria-hidden", "true");
     btn?.setAttribute("aria-expanded", "false");
+    document.body.classList.remove("menu-open");
+    window.setTimeout(() => sheet.classList.remove("is-closing"), 420);
   }
 
   function toggleMenu() {
@@ -311,7 +319,7 @@
         closeMenu();
       }
       if (!e.target.closest(".lang-wrap")) closeLang();
-      if (!e.target.closest(".menu-wrap")) closeMenu();
+      if (!e.target.closest(".menu-wrap") && !e.target.closest("#sheet-menu")) closeMenu();
     });
 
     document.getElementById("contact-send")?.addEventListener("click", sendContact);
