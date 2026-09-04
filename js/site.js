@@ -7,8 +7,8 @@
       id: "viewzy",
       name: "Viewzy",
       platforms: ["iPadOS"],
-      accent: "#C8F06C",
-      icon: "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/e8/e7/13/e8e71340-60d9-fe09-d9ab-f969f2cde535/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      accent: "#00D0C8",
+      icon: "assets/viewzy-icon.png?v=20260904v2b",
       store: "https://apps.apple.com/fr/app/viewzy/id6774137587",
     },
     {
@@ -25,7 +25,7 @@
     {
       id: "viewzy",
       name: "Viewzy",
-      icon: "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/e8/e7/13/e8e71340-60d9-fe09-d9ab-f969f2cde535/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      icon: "assets/viewzy-icon.png?v=20260904v2b",
       shots: [
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/fa/1d/e2/fa1de287-5791-8184-7693-3763d70bbb05/Simulator_Screenshot_-_iPad_Pro_13-inch__U0028M5_U0029_-_2026-06-12_at_12.47.30.png/2064x2752bb.png",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/a8/94/78/a89478a3-3fa6-3e0b-b787-2c2c7449f47f/Simulator_Screenshot_-_iPad_Pro_13-inch__U0028M5_U0029_-_2026-06-12_at_12.47.39.png/2064x2752bb.png",
