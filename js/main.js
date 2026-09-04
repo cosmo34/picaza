@@ -46,7 +46,7 @@ const apps = [
     "statusLabel": "Sur l’App Store",
     "accent": "#00D0C8",
     "wide": false,
-    "icon": "assets/oculus-icon.png?v=20260904o",
+    "icon": "assets/oculus-icon.png?v=20260904v4",
     "href": "apps/oculus.html",
     "store": "https://apps.apple.com/fr/app/oculus/id6776262110?mt=12",
     "ascId": "6776262110",
