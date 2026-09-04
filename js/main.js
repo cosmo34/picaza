@@ -11,7 +11,7 @@ const apps = [
     "statusLabel": "Bientôt",
     "accent": "#5B8DEF",
     "wide": true,
-    "icon": "assets/goway-icon.png",
+    "icon": "assets/goway-icon.png?v=20260904g",
     "href": "apps/goway.html",
     "store": null,
     "ascId": "6806571587",

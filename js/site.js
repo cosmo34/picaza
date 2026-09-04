@@ -47,8 +47,8 @@
     {
       id: "goway",
       name: "GOWAY",
-      icon: "assets/goway-icon.png",
-      shots: ["assets/goway-icon.png", "assets/goway-icon.png"],
+      icon: "assets/goway-icon.png?v=20260904g",
+      shots: ["assets/goway-icon.png?v=20260904g", "assets/goway-icon.png?v=20260904g"],
       shotStyle: "icon",
       href: "apps/goway.html",
     },
