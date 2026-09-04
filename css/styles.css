@@ -11,7 +11,7 @@
   --max: 1120px;
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
   --font-display: "Syne", system-ui, sans-serif;
-  --font-body: "Manrope", system-ui, sans-serif;
+  --font-body: "Syne", system-ui, sans-serif;
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -19,6 +19,8 @@ html { scroll-behavior: smooth; }
 body {
   margin: 0;
   font-family: var(--font-body);
+  font-weight: 500;
+  letter-spacing: -0.01em;
   color: var(--fog);
   background: var(--ink);
   line-height: 1.55;
@@ -78,7 +80,7 @@ button { font: inherit; }
   font-family: var(--font-display);
   font-weight: 800;
   font-size: 1.15rem;
-  letter-spacing: 0.04em;
+  letter-spacing: -0.03em;
 }
 .logo span { color: var(--accent); }
 .nav-links {
@@ -299,7 +301,10 @@ body.modal-open { overflow: hidden; }
   color: transparent;
 }
 .hero-lead {
+  font-family: var(--font-display);
   font-size: clamp(1.05rem, 2.2vw, 1.25rem);
+  font-weight: 500;
+  letter-spacing: -0.015em;
   color: var(--muted);
   max-width: 28rem;
   margin: 0 0 1.75rem;
@@ -323,7 +328,9 @@ body.modal-open { overflow: hidden; }
   padding: 0.85rem 1.2rem;
   border-radius: 999px;
   border: 1px solid var(--line);
-  font-weight: 650;
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: -0.02em;
   transition: transform 0.25s var(--ease), background 0.25s, border-color 0.25s;
 }
 .btn:hover { transform: translateY(-2px); }
