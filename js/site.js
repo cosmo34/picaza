@@ -92,26 +92,22 @@
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"/><path d="M3 12h18M12 3c2.5 2.8 3.8 6 3.8 9s-1.3 6.2-3.8 9c-2.5-2.8-3.8-6-3.8-9S9.5 5.8 12 3z" stroke="currentColor" stroke-width="1.6"/></svg>
               <span id="lang-current">FR</span>
             </button>
-            <ul class="lang-menu" id="lang-menu" hidden role="listbox"></ul>
+            <ul class="nav-dropdown lang-menu" id="lang-menu" hidden role="listbox"></ul>
           </div>
-          <button type="button" class="nav-cta" data-open-contact data-i18n="nav_contact">Contact</button>
-          <button type="button" class="icon-btn menu-btn" id="menu-toggle" aria-haspopup="true" aria-expanded="false" aria-label="Menu">
-            <span class="burger" aria-hidden="true"></span>
-          </button>
+          <div class="menu-wrap">
+            <button type="button" class="icon-btn menu-btn" id="menu-toggle" aria-haspopup="true" aria-expanded="false" aria-label="Menu">
+              <span class="burger" aria-hidden="true"><span></span><span></span><span></span></span>
+            </button>
+            <div class="nav-dropdown sheet-menu" id="sheet-menu" hidden>
+              <a class="sheet-link" href="${p}apps/viewzy.html">Viewzy</a>
+              <a class="sheet-link" href="${p}apps/oculus.html">Oculus</a>
+              <a class="sheet-link" href="${p}apps/goway.html">GOWAY</a>
+              <hr class="sheet-sep" />
+              <button type="button" class="sheet-link sheet-btn" data-open-contact data-i18n="nav_contact">Contact</button>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="sheet-backdrop" id="menu-backdrop" hidden></div>
-      <aside class="sheet-menu" id="sheet-menu" hidden>
-        <p class="sheet-label" data-i18n="menu_apps">Applications</p>
-        <a class="sheet-link" href="${p}apps/viewzy.html">Viewzy</a>
-        <a class="sheet-link" href="${p}apps/oculus.html">Oculus</a>
-        <a class="sheet-link" href="${p}apps/goway.html">GOWAY</a>
-        <hr class="sheet-sep" />
-        <a class="sheet-link" href="${p}index.html#apps" data-i18n="nav_apps" data-show-apps>Apps</a>
-        <a class="sheet-link" href="${p}privacy/" data-i18n="nav_privacy">Confidentialité</a>
-        <a class="sheet-link" href="${p}support/" data-i18n="nav_support">Support</a>
-        <button type="button" class="sheet-link sheet-btn" data-open-contact data-i18n="nav_contact">Contact</button>
-      </aside>
     `;
 
     const menu = document.getElementById("lang-menu");
@@ -182,24 +178,19 @@
 
   function openMenu() {
     const sheet = document.getElementById("sheet-menu");
-    const backdrop = document.getElementById("menu-backdrop");
     const btn = document.getElementById("menu-toggle");
     if (!sheet) return;
+    closeLang();
     sheet.hidden = false;
-    backdrop.hidden = false;
     btn?.setAttribute("aria-expanded", "true");
-    document.body.classList.add("menu-open");
   }
 
   function closeMenu() {
     const sheet = document.getElementById("sheet-menu");
-    const backdrop = document.getElementById("menu-backdrop");
     const btn = document.getElementById("menu-toggle");
     if (!sheet) return;
     sheet.hidden = true;
-    backdrop.hidden = true;
     btn?.setAttribute("aria-expanded", "false");
-    document.body.classList.remove("menu-open");
   }
 
   function toggleMenu() {
@@ -212,6 +203,7 @@
     const menu = document.getElementById("lang-menu");
     const btn = document.getElementById("lang-toggle");
     if (!menu) return;
+    closeMenu();
     menu.hidden = false;
     btn?.setAttribute("aria-expanded", "true");
   }
@@ -306,10 +298,6 @@
         toggleMenu();
         return;
       }
-      if (e.target.closest("#menu-backdrop")) {
-        closeMenu();
-        return;
-      }
       if (e.target.closest("#lang-toggle")) {
         toggleLang();
         return;
@@ -319,6 +307,7 @@
         closeMenu();
       }
       if (!e.target.closest(".lang-wrap")) closeLang();
+      if (!e.target.closest(".menu-wrap")) closeMenu();
     });
 
     document.getElementById("contact-send")?.addEventListener("click", sendContact);
