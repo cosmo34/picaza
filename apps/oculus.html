@@ -9,19 +9,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;650;700&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../css/styles.css" />
 </head>
-<body>
+<body data-depth="1">
   <div class="bg" aria-hidden="true"></div>
-  <header class="nav">
-    <div class="wrap nav-inner">
-      <a class="logo" href="../">PICAZA<span>.</span></a>
-      <nav class="nav-links">
-        <a class="hide-sm" href="../#apps">Apps</a>
-        <a class="hide-sm" href="../privacy/">Confidentialité</a>
-        <a class="hide-sm" href="../support/">Support</a>
-        <a class="nav-cta" href="mailto:contact@picaza.fr">Contact</a>
-      </nav>
-    </div>
-  </header>
+  <header class="nav" id="site-nav"></header>
   <main>
   <section class="app-hero wrap">
     <div class="app-hero-main">
@@ -29,69 +19,55 @@
       <div>
         <p class="eyebrow">macOS · Apple Silicon · Version 2.0</p>
         <h1>Oculus</h1>
-        <p class="meta">Oculus est le studio vidéo natif pour Mac qui élève votre production — de la prise de vue à la diffusion, du montage à la livraison finale. Pensé pour Apple Silicon, il offre une i</p>
+        <p class="meta" data-app-tagline="oculus">Oculus est le studio vidéo natif pour Mac qui élève votre production — de la prise de vue à la diffusion, du montage à la livraison finale. Pensé pour Apple Silicon, il offre une interface sobre et professionnelle, des pipelines indépendants et une précision de réglage digne d’une régie broadcast.</p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="https://apps.apple.com/fr/app/oculus/id6776262110?mt=12" target="_blank" rel="noopener">Voir sur l’App Store</a>
-          <a class="btn btn-ghost" href="../privacy/oculus/">Confidentialité</a>
-          <a class="btn btn-ghost" href="../support/oculus/">Support</a>
+          <a class="btn btn-primary" href="https://apps.apple.com/fr/app/oculus/id6776262110?mt=12" target="_blank" rel="noopener" data-i18n="store_btn">Voir sur l’App Store</a><a class="btn btn-ghost" href="../privacy/oculus/" data-i18n="privacy_btn">Confidentialité</a><a class="btn btn-ghost" href="../support/oculus/" data-i18n="support_btn">Support</a>
         </div>
       </div>
     </div>
   </section>
-  <section class="gallery wrap"><p class="eyebrow">Visuels App Store Connect</p><div class="shot-row"><figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/a7/44/c9/a744c94c-a635-7e92-00b2-f1f53e2647c4/Capture_d_U2019e_U0301cran.png/2880x1800bb.png" alt="Capture Oculus" loading="lazy" /></figure><figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/7c/fa/b6/7cfab68b-1592-37ef-82dd-b881010c4aa0/Capture_d_U2019e_U0301cran_2.png/2560x1600bb.png" alt="Capture Oculus" loading="lazy" /></figure><figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/da/8a/cf/da8acf08-a24f-f930-c1ac-2ffc247570a4/Capture_d_U2019e_U0301cran_3.png/2560x1600bb.png" alt="Capture Oculus" loading="lazy" /></figure><figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/96/d9/ca/96d9ca29-6173-3a02-c61d-62e76a542638/Capture_d_U2019e_U0301cran_4.png/2880x1800bb.png" alt="Capture Oculus" loading="lazy" /></figure></div></section>
+  <section class="gallery wrap"><p class="eyebrow" data-i18n="visuals">Visuels</p><div class="shot-row"><figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/a7/44/c9/a744c94c-a635-7e92-00b2-f1f53e2647c4/Capture_d_U2019e_U0301cran.png/2880x1800bb.png" alt="Capture Oculus" loading="lazy" /></figure><figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/7c/fa/b6/7cfab68b-1592-37ef-82dd-b881010c4aa0/Capture_d_U2019e_U0301cran_2.png/2560x1600bb.png" alt="Capture Oculus" loading="lazy" /></figure><figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/da/8a/cf/da8acf08-a24f-f930-c1ac-2ffc247570a4/Capture_d_U2019e_U0301cran_3.png/2560x1600bb.png" alt="Capture Oculus" loading="lazy" /></figure><figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/96/d9/ca/96d9ca29-6173-3a02-c61d-62e76a542638/Capture_d_U2019e_U0301cran_4.png/2880x1800bb.png" alt="Capture Oculus" loading="lazy" /></figure></div></section>
   <section class="wrap app-detail">
     <div class="prose">
-      <h2>À propos</h2>
-      <p>Oculus est le studio vidéo natif pour Mac qui élève votre production — de la prise de vue à la diffusion, du montage à la livraison finale. Pensé pour Apple Silicon, il offre une interface sobre et professionnelle, des pipelines indépendants et une précision de réglage digne d’une régie broadcast.</p><p>CAPTURE</p><p>Enregistrez avec maîtrise, quelle que soit votre source.</p><p>Caméras et périphériques vidéo USB / HDMI
-Capture d’écran haute performance (ScreenCaptureKit)
-Flux réseau : RTSP, RTMP, HTTP, HLS…
-Canevas HD, Full HD, 4K ou natif — jusqu’à 60 images/s
-Codecs d’enregistrement : H.264, HEVC, ProRes (422 LT, HQ, 4444)
-Débit VBR ou CBR, réglages audio avancés et vumètres en temps réel
-Filtres image cinématographiques : Cinéma, Portrait, Documentaire, Teal &amp; Orange, Noir, Low Light…
-Préréglages personnalisés mémorisés
-Incrustations multi-calques : logos, images, vidéos fond vert, chroma key et modes de fusion
-Transfert automatique vers vos dossiers de production</p><p>DIFFUSION LIVE</p><p>Diffusez en direct avec la sérénité d’un outil de régie.</p><p>Plateformes prêtes à l’emploi : YouTube, Twitch, Facebook, Vimeo, Kick, Instagram
-Serveurs personnalisés : RTMP, RTMPS, SRT, RTSP, HLS, RIST
-Pipeline de diffusion indépendant de la capture
-Effets instantanés vidéo et audio pendant le live
-Filtres image et incrustations dédiés à la diffusion
-Enregistrement simultané pendant le stream, sans compromis sur la fluidité
-Tableau de bord de diffusion : statut, débit, encodeur, diagnostics</p><p>MONTAGE</p><p>Assemblez vos rushes dans le même environnement.</p><p>Timeline multi-pistes
-Glisser-déposer libre ou insertion séquentielle
-Transitions et animations
-Contrôle de la vitesse des clips
-Export intégré vers vos formats de livraison</p><p>CONVERSION</p><p>Transformez et livrez à l’échelle.</p><p>Conversion par lots vers une large bibliothèque de formats
-H.264, HEVC, ProRes, AV1 (SVT-AV1), MKV, MOV, MP4, AVI, M4V, 3GP…
-Profils optimisés : web, broadcast, mobile, qualité maximale, faible taille
-Progression en temps réel, file d’attente intelligente</p><p>CONÇU POUR LE PROFESSIONNEL</p><p>Oculus n’est pas un gadget : c’est un poste de travail vidéo complet sur Mac.</p><p>Interface sombre, lisible, pensée pour de longues sessions
-Espaces de travail Capture et Diffusion totalement séparés
-Réglages persistants : sources, incrustations, filtres, dossiers favoris
-Relocalisation automatique des médias si un fichier a été déplacé
-Optimisé pour macOS 14 et Apple Silicon
-Respect de la confidentialité : traitement local, sandbox Apple</p><p>ABONNEMENTS MODULAIRES</p><p>Essayez gratuitement, puis débloquez uniquement ce dont vous avez besoin :
-Capture, Diffusion, Montage, Conversion — ou l’accès Complet pour l’ensemble du studio.</p><p>POUR QUI ?</p><p>Créateurs de contenu, streamers, vidéastes indépendants, associations, entreprises, formateurs, régisseurs événementiels et toute personne qui souhaite produire et diffuser une image soignée, sans quitter son Mac.</p><p>Téléchargez Oculus. Prenez le contrôle de votre image.</p><p>Conditions d’utilisation (EULA) : https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
-Politique de confidentialité : https://cosmo34.github.io/visionflux-pages/privacy-policy.html</p>
-      <h2>Fonctionnalités</h2>
-      <ul class="feature-list"><li>Enregistrez avec maîtrise, quelle que soit votre source.</li><li>Caméras et périphériques vidéo USB / HDMI</li><li>Capture d’écran haute performance (ScreenCaptureKit)</li><li>Flux réseau : RTSP, RTMP, HTTP, HLS…</li><li>Canevas HD, Full HD, 4K ou natif — jusqu’à 60 images/s</li><li>Codecs d’enregistrement : H.264, HEVC, ProRes (422 LT, HQ, 4444)</li><li>Débit VBR ou CBR, réglages audio avancés et vumètres en temps réel</li><li>Filtres image cinématographiques : Cinéma, Portrait, Documentaire, Teal &amp; Orange, Noir, Low Light…</li><li>Préréglages personnalisés mémorisés</li><li>Incrustations multi-calques : logos, images, vidéos fond vert, chroma key et modes de fusion</li><li>Transfert automatique vers vos dossiers de production</li><li>Diffusez en direct avec la sérénité d’un outil de régie.</li><li>Plateformes prêtes à l’emploi : YouTube, Twitch, Facebook, Vimeo, Kick, Instagram</li><li>Serveurs personnalisés : RTMP, RTMPS, SRT, RTSP, HLS, RIST</li><li>Pipeline de diffusion indépendant de la capture</li><li>Effets instantanés vidéo et audio pendant le live</li></ul>
-      <h2>Contact</h2>
-      <p><a href="mailto:contact@picaza.fr">contact@picaza.fr</a></p>
+      <h2 data-i18n="about">À propos</h2>
+      <p>Oculus est le studio vidéo natif pour Mac qui élève votre production — de la prise de vue à la diffusion, du montage à la livraison finale. Pensé pour Apple Silicon, il offre une interface sobre et professionnelle, des pipelines indépendants et une précision de réglage digne d’une régie broadcast.</p>
+<h2>Capture</h2>
+<p>Enregistrez avec maîtrise, quelle que soit votre source.</p>
+<p>Caméras et périphériques vidéo USB / HDMI<br/>Capture d’écran haute performance (ScreenCaptureKit)<br/>Flux réseau : RTSP, RTMP, HTTP, HLS…<br/>Canevas HD, Full HD, 4K ou natif — jusqu’à 60 images/s<br/>Codecs d’enregistrement : H.264, HEVC, ProRes (422 LT, HQ, 4444)<br/>Débit VBR ou CBR, réglages audio avancés et vumètres en temps réel<br/>Filtres image cinématographiques : Cinéma, Portrait, Documentaire, Teal &amp; Orange, Noir, Low Light…<br/>Préréglages personnalisés mémorisés<br/>Incrustations multi-calques : logos, images, vidéos fond vert, chroma key et modes de fusion<br/>Transfert automatique vers vos dossiers de production</p>
+<h2>Diffusion Live</h2>
+<p>Diffusez en direct avec la sérénité d’un outil de régie.</p>
+<ul class="feature-list"><li>Plateformes prêtes à l’emploi : YouTube, Twitch, Facebook, Vimeo, Kick, Instagram</li><li>Serveurs personnalisés : RTMP, RTMPS, SRT, RTSP, HLS, RIST</li><li>Pipeline de diffusion indépendant de la capture</li><li>Effets instantanés vidéo et audio pendant le live</li><li>Filtres image et incrustations dédiés à la diffusion</li><li>Enregistrement simultané pendant le stream, sans compromis sur la fluidité</li><li>Tableau de bord de diffusion : statut, débit, encodeur, diagnostics</li></ul>
+<h2>Montage</h2>
+<p>Assemblez vos rushes dans le même environnement.</p>
+<ul class="feature-list"><li>Timeline multi-pistes</li><li>Glisser-déposer libre ou insertion séquentielle</li><li>Transitions et animations</li><li>Contrôle de la vitesse des clips</li><li>Export intégré vers vos formats de livraison</li></ul>
+<h2>Conversion</h2>
+<p>Transformez et livrez à l’échelle.</p>
+<ul class="feature-list"><li>Conversion par lots vers une large bibliothèque de formats</li><li>H.264, HEVC, ProRes, AV1 (SVT-AV1), MKV, MOV, MP4, AVI, M4V, 3GP…</li><li>Profils optimisés : web, broadcast, mobile, qualité maximale, faible taille</li><li>Progression en temps réel, file d’attente intelligente</li></ul>
+<h2>Conçu Pour Le Professionnel</h2>
+<p>Oculus n’est pas un gadget : c’est un poste de travail vidéo complet sur Mac.</p>
+<ul class="feature-list"><li>Interface sombre, lisible, pensée pour de longues sessions</li><li>Espaces de travail Capture et Diffusion totalement séparés</li><li>Réglages persistants : sources, incrustations, filtres, dossiers favoris</li><li>Relocalisation automatique des médias si un fichier a été déplacé</li><li>Optimisé pour macOS 14 et Apple Silicon</li><li>Respect de la confidentialité : traitement local, sandbox Apple</li></ul>
+<h2>Abonnements Modulaires</h2>
+<ul class="feature-list"><li>Essayez gratuitement, puis débloquez uniquement ce dont vous avez besoin :</li><li>Capture, Diffusion, Montage, Conversion — ou l’accès Complet pour l’ensemble du studio.</li></ul>
+<h2>Pour Qui ?</h2>
+<p>Créateurs de contenu, streamers, vidéastes indépendants, associations, entreprises, formateurs, régisseurs événementiels et toute personne qui souhaite produire et diffuser une image soignée, sans quitter son Mac.</p>
+<p>Téléchargez Oculus. Prenez le contrôle de votre image.</p>
+<p>Conditions d’utilisation (EULA) : https://www.apple.com/legal/internet-services/itunes/dev/stdeula/<br/>Politique de confidentialité : https://cosmo34.github.io/visionflux-pages/privacy-policy.html</p>
+      <h2 data-i18n="nav_contact">Contact</h2>
+      <p><button type="button" class="linkish" data-open-contact>contact@picaza.fr</button></p>
     </div>
   </section>
-</main>
+  </main>
   <footer>
     <div class="wrap footer-row">
       <div>© 2026 Picaza</div>
       <div class="footer-links">
-        <a href="../privacy/">Confidentialité</a>
-        <a href="../support/">Support</a>
-        <a href="mailto:contact@picaza.fr">contact@picaza.fr</a>
+        <a href="../privacy/" data-i18n="footer_privacy">Confidentialité</a>
+        <a href="../support/" data-i18n="footer_support">Support</a>
+        <button type="button" class="linkish" data-open-contact>contact@picaza.fr</button>
       </div>
     </div>
   </footer>
-  <script>
-    const nav = document.querySelector('.nav');
-    window.addEventListener('scroll', () => nav.classList.toggle('scrolled', scrollY > 12), {passive:true});
-  </script>
+  <script src="../js/i18n.js"></script>
+  <script src="../js/site.js"></script>
 </body>
 </html>

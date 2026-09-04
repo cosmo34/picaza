@@ -9,68 +9,52 @@
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;650;700&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../css/styles.css" />
 </head>
-<body>
+<body data-depth="1">
   <div class="bg" aria-hidden="true"></div>
-  <header class="nav">
-    <div class="wrap nav-inner">
-      <a class="logo" href="../">PICAZA<span>.</span></a>
-      <nav class="nav-links">
-        <a class="hide-sm" href="../#apps">Apps</a>
-        <a class="hide-sm" href="../privacy/">Confidentialité</a>
-        <a class="hide-sm" href="../support/">Support</a>
-        <a class="nav-cta" href="mailto:contact@picaza.fr">Contact</a>
-      </nav>
-    </div>
-  </header>
+  <header class="nav" id="site-nav"></header>
   <main>
   <section class="app-hero wrap">
     <div class="app-hero-main">
       <img class="app-icon" src="../assets/goway-icon.png" alt="" width="96" height="96" />
       <div>
-        <p class="eyebrow">iOS · Android · Préparation App Store · PREPARE_FOR_SUBMISSION</p>
+        <p class="eyebrow">iOS · Android · App Store</p>
         <h1>GOWAY</h1>
-        <p class="meta">GOWAY est l’application de mobilité pour la Métropole de Montpellier. Elle s’appuie sur les données open data TaM (GTFS / GTFS-RT) pour afficher les départs en temps réel, construi</p>
+        <p class="meta" data-app-tagline="goway">GOWAY est l’application de mobilité pour la Métropole de Montpellier. Elle s’appuie sur les données open data TaM (GTFS / GTFS-RT) pour afficher les départs en temps réel, construire des trajets multimodaux et guider l’utilisateur étape par étape.</p>
         <div class="hero-actions">
-          <span class="chip soon">Pas encore en ligne</span>
-          <a class="btn btn-ghost" href="../privacy/goway/">Confidentialité</a>
-          <a class="btn btn-ghost" href="../support/goway/">Support</a>
+          <span class="chip soon" data-i18n="status_soon">Bientôt</span><a class="btn btn-ghost" href="../privacy/goway/" data-i18n="privacy_btn">Confidentialité</a><a class="btn btn-ghost" href="../support/goway/" data-i18n="support_btn">Support</a>
         </div>
       </div>
     </div>
   </section>
   <section class="gallery wrap">
-          <p class="eyebrow">Visuels</p>
+          <p class="eyebrow" data-i18n="visuals">Visuels</p>
           <div class="shot-row">
             <figure class="shot placeholder">
               <img src="../assets/goway-icon.png" alt="Icône GOWAY" />
-              <figcaption>Captures à uploader dans App Store Connect (statut : PREPARE_FOR_SUBMISSION).</figcaption>
             </figure>
           </div>
         </section>
   <section class="wrap app-detail">
     <div class="prose">
-      <h2>À propos</h2>
-      <p>GOWAY est l’application de mobilité pour la Métropole de Montpellier. Elle s’appuie sur les données open data TaM (GTFS / GTFS-RT) pour afficher les départs en temps réel, construire des trajets multimodaux et guider l’utilisateur étape par étape.</p><p>Conçue pour être rapide et lisible : carte sombre, pastilles de départs, navigation in-app, Live Activities iOS, widgets et options d’accessibilité.</p>
-      <h2>Fonctionnalités</h2>
-      <ul class="feature-list"><li>Horaires tram et bus en temps réel (GTFS + GTFS-RT)</li><li>Carte interactive centrée Montpellier</li><li>Itinéraires multimodaux marche + transport</li><li>Navigation guidée avec avancement GPS automatique</li><li>Live Activities iOS (étape courante + distance)</li><li>Suivi d’arrêt et widgets</li><li>Recherche de destinations et lieux</li><li>Alertes trafic</li><li>7 langues (FR, EN, ES, DE, IT, ZH, AR)</li><li>Accessibilité : VoiceOver, contraste, RTL</li></ul>
-      <h2>Contact</h2>
-      <p><a href="mailto:contact@picaza.fr">contact@picaza.fr</a></p>
+      <h2 data-i18n="about">À propos</h2>
+      <p>GOWAY est l’application de mobilité pour la Métropole de Montpellier. Elle s’appuie sur les données open data TaM (GTFS / GTFS-RT) pour afficher les départs en temps réel, construire des trajets multimodaux et guider l’utilisateur étape par étape.</p>
+<p>Conçue pour être rapide et lisible : carte sombre, pastilles de départs, navigation in-app, Live Activities iOS, widgets et options d’accessibilité.</p>
+      <h2 data-i18n="nav_contact">Contact</h2>
+      <p><button type="button" class="linkish" data-open-contact>contact@picaza.fr</button></p>
     </div>
   </section>
-</main>
+  </main>
   <footer>
     <div class="wrap footer-row">
       <div>© 2026 Picaza</div>
       <div class="footer-links">
-        <a href="../privacy/">Confidentialité</a>
-        <a href="../support/">Support</a>
-        <a href="mailto:contact@picaza.fr">contact@picaza.fr</a>
+        <a href="../privacy/" data-i18n="footer_privacy">Confidentialité</a>
+        <a href="../support/" data-i18n="footer_support">Support</a>
+        <button type="button" class="linkish" data-open-contact>contact@picaza.fr</button>
       </div>
     </div>
   </footer>
-  <script>
-    const nav = document.querySelector('.nav');
-    window.addEventListener('scroll', () => nav.classList.toggle('scrolled', scrollY > 12), {passive:true});
-  </script>
+  <script src="../js/i18n.js"></script>
+  <script src="../js/site.js"></script>
 </body>
 </html>

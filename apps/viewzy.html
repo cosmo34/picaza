@@ -9,19 +9,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;650;700&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../css/styles.css" />
 </head>
-<body>
+<body data-depth="1">
   <div class="bg" aria-hidden="true"></div>
-  <header class="nav">
-    <div class="wrap nav-inner">
-      <a class="logo" href="../">PICAZA<span>.</span></a>
-      <nav class="nav-links">
-        <a class="hide-sm" href="../#apps">Apps</a>
-        <a class="hide-sm" href="../privacy/">Confidentialité</a>
-        <a class="hide-sm" href="../support/">Support</a>
-        <a class="nav-cta" href="mailto:contact@picaza.fr">Contact</a>
-      </nav>
-    </div>
-  </header>
+  <header class="nav" id="site-nav"></header>
   <main>
   <section class="app-hero wrap">
     <div class="app-hero-main">
@@ -29,60 +19,45 @@
       <div>
         <p class="eyebrow">iPadOS · Version 1.2.1</p>
         <h1>Viewzy</h1>
-        <p class="meta">Viewzy est une application iPad conçue pour parcourir facilement vos serveurs de fichiers sur le réseau local, consulter vos médias et organiser vos sélections en quelques gestes.</p>
+        <p class="meta" data-app-tagline="viewzy">Viewzy est une application iPad conçue pour parcourir facilement vos serveurs de fichiers sur le réseau local, consulter vos médias et organiser vos sélections en quelques gestes.</p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="https://apps.apple.com/fr/app/viewzy/id6774137587" target="_blank" rel="noopener">Voir sur l’App Store</a>
-          <a class="btn btn-ghost" href="../privacy/viewzy/">Confidentialité</a>
-          <a class="btn btn-ghost" href="../support/viewzy/">Support</a>
+          <a class="btn btn-primary" href="https://apps.apple.com/fr/app/viewzy/id6774137587" target="_blank" rel="noopener" data-i18n="store_btn">Voir sur l’App Store</a><a class="btn btn-ghost" href="../privacy/viewzy/" data-i18n="privacy_btn">Confidentialité</a><a class="btn btn-ghost" href="../support/viewzy/" data-i18n="support_btn">Support</a>
         </div>
       </div>
     </div>
   </section>
-  <section class="gallery wrap"><p class="eyebrow">Visuels App Store Connect</p><div class="shot-row"><figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/fa/1d/e2/fa1de287-5791-8184-7693-3763d70bbb05/Simulator_Screenshot_-_iPad_Pro_13-inch__U0028M5_U0029_-_2026-06-12_at_12.47.30.png/2064x2752bb.png" alt="Capture Viewzy" loading="lazy" /></figure><figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/a8/94/78/a89478a3-3fa6-3e0b-b787-2c2c7449f47f/Simulator_Screenshot_-_iPad_Pro_13-inch__U0028M5_U0029_-_2026-06-12_at_12.47.39.png/2064x2752bb.png" alt="Capture Viewzy" loading="lazy" /></figure><figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/13/3e/a4/133ea4a6-d654-244d-3495-f9d53617831e/Simulator_Screenshot_-_iPad_Pro_13-inch__U0028M5_U0029_-_2026-06-12_at_12.47.48.png/2064x2752bb.png" alt="Capture Viewzy" loading="lazy" /></figure><figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/bb/03/42/bb034225-3c8c-f0b0-adfa-bfc255db2d55/Simulator_Screenshot_-_iPad_Pro_13-inch__U0028M5_U0029_-_2026-06-12_at_12.47.56.png/2064x2752bb.png" alt="Capture Viewzy" loading="lazy" /></figure><figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/1c/c2/41/1cc2412c-ac45-cc27-8709-0a84270361b7/Simulator_Screenshot_-_iPad_Pro_13-inch__U0028M5_U0029_-_2026-06-12_at_12.48.04.png/2064x2752bb.png" alt="Capture Viewzy" loading="lazy" /></figure></div></section>
+  <section class="gallery wrap"><p class="eyebrow" data-i18n="visuals">Visuels</p><div class="shot-row"><figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/fa/1d/e2/fa1de287-5791-8184-7693-3763d70bbb05/Simulator_Screenshot_-_iPad_Pro_13-inch__U0028M5_U0029_-_2026-06-12_at_12.47.30.png/2064x2752bb.png" alt="Capture Viewzy" loading="lazy" /></figure><figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/a8/94/78/a89478a3-3fa6-3e0b-b787-2c2c7449f47f/Simulator_Screenshot_-_iPad_Pro_13-inch__U0028M5_U0029_-_2026-06-12_at_12.47.39.png/2064x2752bb.png" alt="Capture Viewzy" loading="lazy" /></figure><figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/13/3e/a4/133ea4a6-d654-244d-3495-f9d53617831e/Simulator_Screenshot_-_iPad_Pro_13-inch__U0028M5_U0029_-_2026-06-12_at_12.47.48.png/2064x2752bb.png" alt="Capture Viewzy" loading="lazy" /></figure><figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/bb/03/42/bb034225-3c8c-f0b0-adfa-bfc255db2d55/Simulator_Screenshot_-_iPad_Pro_13-inch__U0028M5_U0029_-_2026-06-12_at_12.47.56.png/2064x2752bb.png" alt="Capture Viewzy" loading="lazy" /></figure><figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/1c/c2/41/1cc2412c-ac45-cc27-8709-0a84270361b7/Simulator_Screenshot_-_iPad_Pro_13-inch__U0028M5_U0029_-_2026-06-12_at_12.48.04.png/2064x2752bb.png" alt="Capture Viewzy" loading="lazy" /></figure></div></section>
   <section class="wrap app-detail">
     <div class="prose">
-      <h2>À propos</h2>
-      <p>Viewzy est une application iPad conçue pour parcourir facilement vos serveurs de fichiers sur le réseau local, consulter vos médias et organiser vos sélections en quelques gestes.</p><p>Fonctionnalités principales</p><p>Connexion à vos serveurs FTP, SFTP et SMB
-Navigation rapide dans les dossiers avec fil d’Ariane
-Affichage des fichiers en grille ou en liste
-Recherche de fichiers et dossiers
-Tri par nom, date et taille
-Prévisualisation plein écran des photos
-Lecture vidéo intégrée
-Génération et affichage de miniatures optimisées pour les gros dossiers
-Regroupement des fichiers par jour pour une lecture plus claire</p><p>Panier et partage</p><p>Ajout d’un ou plusieurs fichiers au panier
-Sélection de produit et de dossier lors de l’ajout
-Détection des doublons avant transfert
-Export et partage via les options iOS/iPadOS (dont AirDrop)</p><p>Personnalisation et réglages</p><p>Réglages d’interface (tailles de textes, icônes, miniatures)
-Masquage des extensions de fichiers
-Paramètres de lecture vidéo
-Paramètres de tri et d’affichage
-Personnalisation visuelle (logo, filigrane image/opacity)</p><p>Performance et contrôle</p><p>Conçue pour les dossiers volumineux
-Cache local avec outils de nettoyage
-Diagnostic de performances des miniatures
-Gestion de l’inactivité et réinitialisation automatique configurable</p><p>Sécurité</p><p>Gestion de l’accès aux réglages (code/verrouillage)
-Connexions réseau selon le protocole configuré
-Gestion des serveurs et des préférences de manière centralisée</p><p>Conditions d’utilisation (EULA) : https://www.apple.com/legal/internet-services/itunes/dev/stdeula/</p>
-      <h2>Fonctionnalités</h2>
-      <ul class="feature-list"><li>Fonctionnalités principales</li><li>Connexion à vos serveurs FTP, SFTP et SMB</li><li>Navigation rapide dans les dossiers avec fil d’Ariane</li><li>Affichage des fichiers en grille ou en liste</li><li>Recherche de fichiers et dossiers</li><li>Tri par nom, date et taille</li><li>Prévisualisation plein écran des photos</li><li>Lecture vidéo intégrée</li><li>Génération et affichage de miniatures optimisées pour les gros dossiers</li><li>Regroupement des fichiers par jour pour une lecture plus claire</li><li>Ajout d’un ou plusieurs fichiers au panier</li><li>Sélection de produit et de dossier lors de l’ajout</li><li>Détection des doublons avant transfert</li><li>Export et partage via les options iOS/iPadOS (dont AirDrop)</li><li>Personnalisation et réglages</li><li>Réglages d’interface (tailles de textes, icônes, miniatures)</li></ul>
-      <h2>Contact</h2>
-      <p><a href="mailto:contact@picaza.fr">contact@picaza.fr</a></p>
+      <h2 data-i18n="about">À propos</h2>
+      <p>Viewzy est une application iPad conçue pour parcourir facilement vos serveurs de fichiers sur le réseau local, consulter vos médias et organiser vos sélections en quelques gestes.</p>
+<p>Fonctionnalités principales</p>
+<ul class="feature-list"><li>Connexion à vos serveurs FTP, SFTP et SMB</li><li>Navigation rapide dans les dossiers avec fil d’Ariane</li><li>Affichage des fichiers en grille ou en liste</li><li>Recherche de fichiers et dossiers</li><li>Tri par nom, date et taille</li><li>Prévisualisation plein écran des photos</li><li>Lecture vidéo intégrée</li><li>Génération et affichage de miniatures optimisées pour les gros dossiers</li><li>Regroupement des fichiers par jour pour une lecture plus claire</li></ul>
+<p>Panier et partage</p>
+<ul class="feature-list"><li>Ajout d’un ou plusieurs fichiers au panier</li><li>Sélection de produit et de dossier lors de l’ajout</li><li>Détection des doublons avant transfert</li><li>Export et partage via les options iOS/iPadOS (dont AirDrop)</li></ul>
+<p>Personnalisation et réglages</p>
+<ul class="feature-list"><li>Réglages d’interface (tailles de textes, icônes, miniatures)</li><li>Masquage des extensions de fichiers</li><li>Paramètres de lecture vidéo</li><li>Paramètres de tri et d’affichage</li><li>Personnalisation visuelle (logo, filigrane image/opacity)</li></ul>
+<p>Performance et contrôle</p>
+<ul class="feature-list"><li>Conçue pour les dossiers volumineux</li><li>Cache local avec outils de nettoyage</li><li>Diagnostic de performances des miniatures</li><li>Gestion de l’inactivité et réinitialisation automatique configurable</li></ul>
+<p>Sécurité</p>
+<ul class="feature-list"><li>Gestion de l’accès aux réglages (code/verrouillage)</li><li>Connexions réseau selon le protocole configuré</li><li>Gestion des serveurs et des préférences de manière centralisée</li></ul>
+<p>Conditions d’utilisation (EULA) : https://www.apple.com/legal/internet-services/itunes/dev/stdeula/</p>
+      <h2 data-i18n="nav_contact">Contact</h2>
+      <p><button type="button" class="linkish" data-open-contact>contact@picaza.fr</button></p>
     </div>
   </section>
-</main>
+  </main>
   <footer>
     <div class="wrap footer-row">
       <div>© 2026 Picaza</div>
       <div class="footer-links">
-        <a href="../privacy/">Confidentialité</a>
-        <a href="../support/">Support</a>
-        <a href="mailto:contact@picaza.fr">contact@picaza.fr</a>
+        <a href="../privacy/" data-i18n="footer_privacy">Confidentialité</a>
+        <a href="../support/" data-i18n="footer_support">Support</a>
+        <button type="button" class="linkish" data-open-contact>contact@picaza.fr</button>
       </div>
     </div>
   </footer>
-  <script>
-    const nav = document.querySelector('.nav');
-    window.addEventListener('scroll', () => nav.classList.toggle('scrolled', scrollY > 12), {passive:true});
-  </script>
+  <script src="../js/i18n.js"></script>
+  <script src="../js/site.js"></script>
 </body>
 </html>

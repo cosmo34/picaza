@@ -13,45 +13,35 @@
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;650;700&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
-<body>
+<body data-depth="0">
   <div class="bg" aria-hidden="true"></div>
 
-  <header class="nav">
-    <div class="wrap nav-inner">
-      <a class="logo" href="/">PICAZA<span>.</span></a>
-      <nav class="nav-links" aria-label="Principal">
-        <a class="hide-sm" href="#apps">Apps</a>
-        <a class="hide-sm" href="privacy/">Confidentialité</a>
-        <a class="hide-sm" href="support/">Support</a>
-        <a class="nav-cta" href="mailto:contact@picaza.fr">Contact</a>
-      </nav>
-    </div>
-  </header>
+  <header class="nav" id="site-nav"></header>
 
   <main>
     <section class="hero wrap">
       <div class="hero-orbit" aria-hidden="true"></div>
       <div class="hero-copy">
         <h1 class="hero-brand">Picaza<em>.</em></h1>
-        <p class="hero-lead">
+        <p class="hero-lead" data-i18n="hero_lead">
           Studio d’applications — jeux, outils créatifs et mobilité.
           Des produits sobres, fluides, pensés pour iOS, iPad, Mac et Android.
         </p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#apps">Voir les apps</a>
-          <a class="btn btn-ghost" href="mailto:contact@picaza.fr">contact@picaza.fr</a>
+          <a class="btn btn-primary" href="#apps" data-i18n="cta_apps">Voir les apps</a>
+          <button type="button" class="btn btn-ghost" data-open-contact>contact@picaza.fr</button>
         </div>
       </div>
     </section>
 
-    <section id="apps">
+    <section id="apps" hidden>
       <div class="wrap">
         <div class="section-head reveal">
           <div>
-            <p class="eyebrow">Catalogue</p>
-            <h2 class="section-title">Toutes les applications</h2>
+            <p class="eyebrow" data-i18n="catalog_eyebrow">Catalogue</p>
+            <h2 class="section-title" data-i18n="catalog_title">Toutes les applications</h2>
           </div>
-          <p class="section-note">Fiches produit, liens de téléchargement, confidentialité et support.</p>
+          <p class="section-note" data-i18n="catalog_note">Fiches produit, liens de téléchargement, confidentialité et support.</p>
         </div>
         <div class="apps-grid" id="apps-grid"></div>
       </div>
@@ -60,13 +50,13 @@
     <section class="contact" id="contact">
       <div class="wrap contact-grid">
         <div class="reveal">
-          <p class="eyebrow">Contact</p>
-          <h2 class="section-title">Une question&nbsp;?</h2>
-          <p class="section-note" style="margin-top:0.75rem">Support, presse, partenariats — une seule adresse.</p>
+          <p class="eyebrow" data-i18n="contact_eyebrow">Contact</p>
+          <h2 class="section-title" data-i18n="contact_title">Une question&nbsp;?</h2>
+          <p class="section-note" style="margin-top:0.75rem" data-i18n="contact_note">Support, presse, partenariats — une seule adresse.</p>
         </div>
         <div class="reveal">
-          <a class="mail" href="mailto:contact@picaza.fr">contact@picaza.fr</a>
-          <p style="color:var(--muted);margin:0.75rem 0 0">Réponse sous 5 jours ouvrés en général.</p>
+          <button type="button" class="mail" data-open-contact>contact@picaza.fr</button>
+          <p style="color:var(--muted);margin:0.75rem 0 0" data-i18n="contact_reply">Réponse sous 5 jours ouvrés en général.</p>
         </div>
       </div>
     </section>
@@ -76,13 +66,14 @@
     <div class="wrap footer-row">
       <div>© 2026 Picaza</div>
       <div class="footer-links">
-        <a href="privacy/">Confidentialité</a>
-        <a href="support/">Support</a>
-        <a href="https://github.com/cosmo34">GitHub</a>
+        <a href="privacy/" data-i18n="footer_privacy">Confidentialité</a>
+        <a href="support/" data-i18n="footer_support">Support</a>
+        <button type="button" class="linkish" data-open-contact>contact@picaza.fr</button>
       </div>
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/site.js"></script>
 </body>
 </html>
