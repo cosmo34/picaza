@@ -7,7 +7,7 @@ const apps = [
       "iOS",
       "Android"
     ],
-    "status": "live",
+    "status": "draft",
     "statusLabel": "Bientôt",
     "accent": "#5B8DEF",
     "wide": true,
@@ -54,9 +54,18 @@ const apps = [
   }
 ];
 
+function isPublished(app) {
+  return Boolean(app.store) || app.ascState === "READY_FOR_SALE";
+}
+
 function renderApps(root) {
   if (!root) return;
-  root.innerHTML = apps
+  const visible = apps.filter(isPublished);
+  if (!visible.length) {
+    root.innerHTML = `<p class="reveal in" style="opacity:.7">Catalogue à venir.</p>`;
+    return;
+  }
+  root.innerHTML = visible
     .map((app) => {
       const chips = [
         `<span class="chip ${app.status}">${app.statusLabel}</span>`,
