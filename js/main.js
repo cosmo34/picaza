@@ -1,41 +1,57 @@
 const apps = [
   {
-    id: "goway",
-    name: "GOWAY",
-    tagline: "Horaires temps réel et navigation TaM à Montpellier.",
-    platforms: ["iOS", "Android"],
-    status: "live",
-    statusLabel: "Bientôt",
-    accent: "#5B8DEF",
-    wide: true,
-    icon: "assets/goway-icon.png",
-    href: "apps/goway.html",
-    store: null,
+    "id": "goway",
+    "name": "GOWAY",
+    "tagline": "GOWAY est l’application de mobilité pour la Métropole de Montpellier. Elle s’appuie sur les données open data TaM (GT…",
+    "platforms": [
+      "iOS",
+      "Android"
+    ],
+    "status": "live",
+    "statusLabel": "Bientôt",
+    "accent": "#5B8DEF",
+    "wide": true,
+    "icon": "assets/goway-icon.png",
+    "href": "apps/goway.html",
+    "store": null,
+    "ascId": "6806571587",
+    "ascState": "PREPARE_FOR_SUBMISSION"
   },
   {
-    id: "viewzy",
-    name: "Viewzy",
-    tagline: "Serveurs de fichiers, médias et panier — conçu pour iPad.",
-    platforms: ["iPadOS"],
-    status: "live",
-    statusLabel: "Sur l’App Store",
-    accent: "#C8F06C",
-    icon: "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/e8/e7/13/e8e71340-60d9-fe09-d9ab-f969f2cde535/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
-    href: "apps/viewzy.html",
-    store: "https://apps.apple.com/fr/app/viewzy/id6774137587",
+    "id": "viewzy",
+    "name": "Viewzy",
+    "tagline": "Viewzy est une application iPad conçue pour parcourir facilement vos serveurs de fichiers sur le réseau local, consul…",
+    "platforms": [
+      "iPadOS"
+    ],
+    "status": "live",
+    "statusLabel": "Sur l’App Store",
+    "accent": "#C8F06C",
+    "wide": false,
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/e8/e7/13/e8e71340-60d9-fe09-d9ab-f969f2cde535/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+    "href": "apps/viewzy.html",
+    "store": "https://apps.apple.com/fr/app/viewzy/id6774137587",
+    "ascId": "6774137587",
+    "ascState": "READY_FOR_SALE"
   },
   {
-    id: "oculus",
-    name: "Oculus",
-    tagline: "Studio vidéo Mac — capture, diffusion, montage, conversion.",
-    platforms: ["macOS"],
-    status: "live",
-    statusLabel: "Sur le Mac App Store",
-    accent: "#6EC8C0",
-    icon: "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/7e/ae/f3/7eaef3ed-e22b-1d97-cb33-8b40e960be09/AppIcon-0-0-85-220-0-5-0-2x.png/512x512bb.png",
-    href: "apps/oculus.html",
-    store: "https://apps.apple.com/fr/app/oculus/id6776262110?mt=12",
-  },
+    "id": "oculus",
+    "name": "Oculus",
+    "tagline": "Oculus est le studio vidéo natif pour Mac qui élève votre production — de la prise de vue à la diffusion, du montage …",
+    "platforms": [
+      "macOS",
+      "Apple Silicon"
+    ],
+    "status": "live",
+    "statusLabel": "Sur l’App Store",
+    "accent": "#6EC8C0",
+    "wide": false,
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/7e/ae/f3/7eaef3ed-e22b-1d97-cb33-8b40e960be09/AppIcon-0-0-85-220-0-5-0-2x.png/512x512bb.png",
+    "href": "apps/oculus.html",
+    "store": "https://apps.apple.com/fr/app/oculus/id6776262110?mt=12",
+    "ascId": "6776262110",
+    "ascState": "READY_FOR_SALE"
+  }
 ];
 
 function renderApps(root) {
