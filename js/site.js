@@ -84,7 +84,7 @@
     if (!mount) return;
     const p = depthPrefix();
     mount.innerHTML = `
-      <div class="wrap nav-inner">
+      <div class="nav-inner">
         <a class="logo" href="${p}index.html" data-home>PICAZA<span>.</span></a>
         <div class="nav-actions">
           <div class="lang-wrap">
