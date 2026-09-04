@@ -1,0 +1,46 @@
+# Deploy Picaza site to OVH web hosting on every push to main.
+#
+# Required GitHub Secrets:
+#   OVH_FTP_HOST     e.g. ftp.cluster0XX.hosting.ovh.net
+#   OVH_FTP_USER     FTP login
+#   OVH_FTP_PASSWORD FTP password
+#   OVH_FTP_SERVER_DIR  e.g. /www/  or /home/xxx/www/
+
+name: Deploy to OVH
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Prepare deploy bundle
+        run: |
+          mkdir -p dist
+          # Static site root (exclude git / docs internes optionnels)
+          rsync -a \
+            --exclude '.git' \
+            --exclude '.github' \
+            --exclude 'docs' \
+            --exclude 'README.md' \
+            --exclude 'CNAME' \
+            ./ dist/
+          # Prefer OVH HTTPS without GitHub Pages CNAME
+          rm -f dist/CNAME || true
+          ls -la dist
+
+      - name: FTP deploy to OVH
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.OVH_FTP_HOST }}
+          username: ${{ secrets.OVH_FTP_USER }}
+          password: ${{ secrets.OVH_FTP_PASSWORD }}
+          local-dir: ./dist/
+          server-dir: ${{ secrets.OVH_FTP_SERVER_DIR }}
+          dangerous-clean-slate: false
