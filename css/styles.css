@@ -158,44 +158,8 @@ button { font: inherit; }
   color: inherit;
   pointer-events: none;
 }
-.nav-dropdown {
-  display: none !important;
-  position: absolute;
-  top: calc(100% + 0.45rem);
-  right: 0;
-  left: auto;
-  z-index: 70;
-  margin: 0;
-  padding: 0.45rem;
-  list-style: none;
-  min-width: 10.5rem;
-  border-radius: 0.95rem;
-  border: 1px solid rgba(232, 228, 220, 0.14);
-  background: rgba(11, 12, 14, 0.42);
-  backdrop-filter: blur(18px) saturate(1.2);
-  -webkit-backdrop-filter: blur(18px) saturate(1.2);
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.28);
-  flex-direction: column;
-  gap: 0.15rem;
-}
-html[dir="rtl"] .nav-dropdown {
-  right: auto;
-  left: 0;
-}
-.nav-dropdown.is-open {
-  display: flex !important;
-}
-.lang-menu li {
-  padding: 0.55rem 0.75rem;
-  border-radius: 0.55rem;
-  cursor: pointer;
-  color: var(--muted);
-  font-size: 0.9rem;
-  text-align: end;
-}
-.lang-menu li:hover { background: rgba(255,255,255,0.06); color: var(--fog); }
 
-/* Sandwich — volet roulant aligné à droite */
+/* Menus volet (langue + sandwich) — alignés à droite */
 .sheet-menu {
   position: absolute;
   top: 100%;
@@ -254,11 +218,12 @@ html[dir="rtl"] .nav-dropdown {
 .sheet-menu.is-closing .sheet-link,
 .sheet-menu.is-closing .sheet-btn {
   animation: shutterUp 0.32s var(--ease) forwards;
-  animation-delay: calc((3 - var(--i, 0)) * 0.06s);
+  animation-delay: calc((var(--n, 3) - var(--i, 0)) * 0.06s);
   opacity: 1;
   clip-path: inset(0 0 0 0);
   transform: none;
 }
+#sheet-menu .sheet-rail { --n: 3; }
 @keyframes shutterDown {
   0% {
     clip-path: inset(0 0 100% 0);
@@ -370,21 +335,125 @@ body.modal-open { overflow: hidden; }
   line-height: 1.55;
 }
 
-/* Hero — one composition, full-bleed (orbit clipped here, text in .wrap) */
+/* Hero — showcase tournant puis marque */
 .hero {
   position: relative;
-  min-height: min(100svh, 920px);
-  display: grid;
-  align-items: end;
-  padding: 2rem 0 4.5rem;
+  min-height: min(100svh, 980px);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 1.25rem 0 3.5rem;
   overflow: hidden;
 }
-.hero > .wrap {
+.hero-layout {
   position: relative;
   z-index: 1;
   width: min(100% - 2.5rem, var(--max));
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1.5rem, 4vh, 2.75rem);
+  flex: 1;
+  justify-content: space-between;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
 }
-.hero-copy { max-width: 38rem; padding-bottom: 1rem; }
+.hero-showcase {
+  position: relative;
+  width: 100%;
+  min-height: clamp(220px, 36vh, 340px);
+}
+.hero-slide {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr);
+  gap: clamp(1rem, 3vw, 2rem);
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.85s var(--ease);
+}
+.hero-slide.is-active {
+  opacity: 1;
+  pointer-events: auto;
+  z-index: 1;
+}
+.hero-slide-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  min-width: 0;
+}
+.hero-slide-top {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+.hero-slide-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  object-fit: cover;
+  flex-shrink: 0;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35);
+}
+.hero-slide-name {
+  font-family: var(--font-display);
+  font-size: clamp(1.45rem, 3.5vw, 2rem);
+  font-weight: 750;
+  letter-spacing: -0.03em;
+  margin: 0;
+  line-height: 1.1;
+}
+.hero-slide-summary {
+  margin: 0;
+  color: var(--muted);
+  font-size: clamp(0.95rem, 1.8vw, 1.08rem);
+  line-height: 1.45;
+  max-width: 22rem;
+}
+.hero-slide-shot {
+  margin: 0;
+  border-radius: 1rem;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.03);
+  aspect-ratio: 16 / 10;
+  max-height: min(34vh, 300px);
+  justify-self: end;
+  width: 100%;
+}
+.hero-slide-shot img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+}
+.hero-slide-shot.is-portrait {
+  aspect-ratio: 3 / 4;
+  max-width: min(42vw, 220px);
+  max-height: min(36vh, 320px);
+}
+.hero-slide-shot.is-icon-only {
+  aspect-ratio: 1;
+  max-width: min(40vw, 200px);
+  max-height: min(32vh, 220px);
+  display: grid;
+  place-items: center;
+  background: linear-gradient(160deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+}
+.hero-slide-shot.is-icon-only img {
+  width: 58%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 22%;
+}
+.hero-copy {
+  max-width: 38rem;
+  padding-bottom: 0.25rem;
+}
 .hero-brand {
   font-family: var(--font-display);
   font-weight: 800;
@@ -445,25 +514,29 @@ body.modal-open { overflow: hidden; }
 }
 .btn-ghost:hover { border-color: rgba(232, 228, 220, 0.35); }
 
-.hero-orbit {
-  position: absolute;
-  right: 1.25rem;
-  top: 12%;
-  width: min(40vw, 400px);
-  max-width: calc(100% - 2.5rem);
-  aspect-ratio: 1;
-  border-radius: 50%;
-  background:
-    radial-gradient(circle at 40% 40%, rgba(200, 240, 108, 0.28), transparent 48%),
-    radial-gradient(circle at 70% 60%, rgba(110, 200, 192, 0.24), transparent 52%);
-  opacity: 0;
-  animation: fadeIn 1.4s var(--ease) 0.2s forwards, float 10s ease-in-out infinite;
-  pointer-events: none;
-  z-index: 0;
-}
 @media (max-width: 800px) {
-  .hero-orbit { opacity: 0.55; top: 4%; right: 0.75rem; width: min(58vw, 260px); }
-  .hero { align-items: center; padding-top: 5rem; }
+  .hero { min-height: auto; padding-top: 1rem; padding-bottom: 3rem; }
+  .hero-layout { gap: 1.75rem; justify-content: flex-start; }
+  .hero-showcase { min-height: 280px; }
+  .hero-slide {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    gap: 1rem;
+  }
+  .hero-slide-shot {
+    justify-self: start;
+    max-width: 100%;
+    max-height: 200px;
+    aspect-ratio: 16 / 10;
+  }
+  .hero-slide-shot.is-portrait {
+    max-width: 160px;
+    max-height: 210px;
+  }
+  .hero-slide-shot.is-icon-only {
+    max-width: 140px;
+    max-height: 140px;
+  }
 }
 
 @keyframes rise {
@@ -471,10 +544,6 @@ body.modal-open { overflow: hidden; }
 }
 @keyframes fadeIn {
   to { opacity: 1; }
-}
-@keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(14px); }
 }
 
 /* Sections */

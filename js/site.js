@@ -21,6 +21,36 @@
     },
   ];
 
+  const showcaseApps = [
+    {
+      id: "viewzy",
+      name: "Viewzy",
+      icon: "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/e8/e7/13/e8e71340-60d9-fe09-d9ab-f969f2cde535/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      shot: "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/fa/1d/e2/fa1de287-5791-8184-7693-3763d70bbb05/Simulator_Screenshot_-_iPad_Pro_13-inch__U0028M5_U0029_-_2026-06-12_at_12.47.30.png/2064x2752bb.png",
+      shotStyle: "portrait",
+      href: "apps/viewzy.html",
+    },
+    {
+      id: "oculus",
+      name: "Oculus",
+      icon: "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/7e/ae/f3/7eaef3ed-e22b-1d97-cb33-8b40e960be09/AppIcon-0-0-85-220-0-5-0-2x.png/512x512bb.png",
+      shot: "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/a7/44/c9/a744c94c-a635-7e92-00b2-f1f53e2647c4/Capture_d_U2019e_U0301cran.png/2880x1800bb.png",
+      shotStyle: "landscape",
+      href: "apps/oculus.html",
+    },
+    {
+      id: "goway",
+      name: "GOWAY",
+      icon: "assets/goway-icon.png",
+      shot: "assets/goway-icon.png",
+      shotStyle: "icon",
+      href: "apps/goway.html",
+    },
+  ];
+
+  let showcaseTimer = null;
+  let showcaseIndex = 0;
+
   function depthPrefix() {
     const d = document.body && document.body.dataset.depth;
     if (d === "2") return "../../";
@@ -77,6 +107,46 @@
     if (langBtn) langBtn.textContent = loc.toUpperCase();
 
     renderAppsGrid();
+  }
+
+  function buildShowcase() {
+    const root = document.getElementById("hero-showcase");
+    if (!root) return;
+    const p = depthPrefix();
+    root.innerHTML = showcaseApps
+      .map((app, i) => {
+        const shotClass =
+          app.shotStyle === "portrait"
+            ? "hero-slide-shot is-portrait"
+            : app.shotStyle === "icon"
+              ? "hero-slide-shot is-icon-only"
+              : "hero-slide-shot";
+        return `
+      <a class="hero-slide${i === 0 ? " is-active" : ""}" href="${p}${app.href}" data-showcase-index="${i}">
+        <div class="hero-slide-meta">
+          <div class="hero-slide-top">
+            <img class="hero-slide-icon" src="${app.icon}" alt="" width="56" height="56" />
+            <h2 class="hero-slide-name">${app.name}</h2>
+          </div>
+          <p class="hero-slide-summary" data-i18n="card_${app.id}"></p>
+        </div>
+        <figure class="${shotClass}">
+          <img src="${app.shot}" alt="${app.name}" loading="${i === 0 ? "eager" : "lazy"}" />
+        </figure>
+      </a>`;
+      })
+      .join("");
+
+    showcaseIndex = 0;
+    if (showcaseTimer) clearInterval(showcaseTimer);
+    if (showcaseApps.length < 2) return;
+    showcaseTimer = setInterval(() => {
+      const slides = root.querySelectorAll(".hero-slide");
+      if (!slides.length) return;
+      slides[showcaseIndex]?.classList.remove("is-active");
+      showcaseIndex = (showcaseIndex + 1) % slides.length;
+      slides[showcaseIndex]?.classList.add("is-active");
+    }, 4800);
   }
 
   function buildNav() {
