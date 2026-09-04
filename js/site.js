@@ -139,6 +139,16 @@
       <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="contact-title">
         <h2 id="contact-title" data-i18n="contact_modal_title">Nous écrire</h2>
         <label class="field">
+          <span data-i18n="contact_modal_app">Application concernée</span>
+          <select id="contact-app">
+            <option value="" data-i18n="contact_app_placeholder">Choisir…</option>
+            <option value="Viewzy">Viewzy</option>
+            <option value="Oculus">Oculus</option>
+            <option value="GOWAY">GOWAY</option>
+            <option value="other" data-i18n="contact_app_other">Autre</option>
+          </select>
+        </label>
+        <label class="field">
           <span data-i18n="contact_modal_subject">Sujet</span>
           <input type="text" id="contact-subject" data-i18n-placeholder="contact_subject_ph" />
         </label>
@@ -161,7 +171,7 @@
     modal.hidden = false;
     document.body.classList.add("modal-open");
     closeMenu();
-    setTimeout(() => document.getElementById("contact-subject")?.focus(), 50);
+    setTimeout(() => document.getElementById("contact-app")?.focus(), 50);
   }
 
   function closeContact() {
@@ -172,9 +182,20 @@
   }
 
   function sendContact() {
-    const subject = document.getElementById("contact-subject")?.value?.trim() || "Picaza";
+    const appSelect = document.getElementById("contact-app");
+    const appValue = appSelect?.value || "";
+    const appLabel = appSelect?.selectedOptions?.[0]?.textContent?.trim() || "";
+    const subjectRaw = document.getElementById("contact-subject")?.value?.trim() || "Picaza";
     const message = document.getElementById("contact-message")?.value?.trim() || "";
-    const href = `mailto:${CONTACT}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
+    const appPrefix = appValue
+      ? `[${appValue === "other" ? appLabel : appValue}] `
+      : "";
+    const subject = `${appPrefix}${subjectRaw}`.trim();
+    const bodyParts = [];
+    if (appLabel) bodyParts.push(`${t("contact_modal_app")}: ${appLabel}`);
+    if (message) bodyParts.push("", message);
+    const body = bodyParts.join("\n");
+    const href = `mailto:${CONTACT}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     window.location.href = href;
     closeContact();
   }

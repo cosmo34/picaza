@@ -325,7 +325,7 @@ body.modal-open { overflow: hidden; }
   color: var(--muted);
   font-size: 0.85rem;
 }
-.field input, .field textarea {
+.field input, .field textarea, .field select {
   width: 100%;
   border-radius: 0.75rem;
   border: 1px solid var(--line);
@@ -334,6 +334,24 @@ body.modal-open { overflow: hidden; }
   padding: 0.75rem 0.85rem;
   font: inherit;
   resize: vertical;
+  appearance: none;
+  -webkit-appearance: none;
+}
+.field select {
+  resize: none;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8' fill='none'%3E%3Cpath d='M1 1.5L6 6.5L11 1.5' stroke='%239a958c' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.85rem center;
+  padding-inline-end: 2.2rem;
+}
+.field select option {
+  background: #14171e;
+  color: var(--fog);
+}
+.field input:focus, .field textarea:focus, .field select:focus {
+  outline: 1px solid rgba(200, 240, 108, 0.45);
+  border-color: rgba(200, 240, 108, 0.35);
 }
 .modal-actions {
   display: flex;
@@ -455,8 +473,8 @@ body.modal-open { overflow: hidden; }
   to { opacity: 1; }
 }
 @keyframes float {
-  0%, 100% { transform: translateY(0) scale(1); }
-  50% { transform: translateY(18px) scale(1.03); }
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(14px); }
 }
 
 /* Sections */
