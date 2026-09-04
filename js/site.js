@@ -92,13 +92,15 @@
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"/><path d="M3 12h18M12 3c2.5 2.8 3.8 6 3.8 9s-1.3 6.2-3.8 9c-2.5-2.8-3.8-6-3.8-9S9.5 5.8 12 3z" stroke="currentColor" stroke-width="1.6"/></svg>
               <span id="lang-current">FR</span>
             </button>
-            <ul class="nav-dropdown lang-menu" id="lang-menu" hidden role="listbox"></ul>
+            <ul class="nav-dropdown lang-menu" id="lang-menu" role="listbox"></ul>
           </div>
           <div class="menu-wrap">
             <button type="button" class="icon-btn menu-btn" id="menu-toggle" aria-haspopup="true" aria-expanded="false" aria-label="Menu">
-              <span class="burger" aria-hidden="true"><span></span><span></span><span></span></span>
+              <svg class="burger-icon" width="20" height="14" viewBox="0 0 20 14" fill="none" aria-hidden="true">
+                <path d="M1 1h18M1 7h18M1 13h18" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/>
+              </svg>
             </button>
-            <div class="nav-dropdown sheet-menu" id="sheet-menu" hidden>
+            <div class="nav-dropdown sheet-menu" id="sheet-menu">
               <a class="sheet-link" href="${p}apps/viewzy.html">Viewzy</a>
               <a class="sheet-link" href="${p}apps/oculus.html">Oculus</a>
               <a class="sheet-link" href="${p}apps/goway.html">GOWAY</a>
@@ -181,7 +183,7 @@
     const btn = document.getElementById("menu-toggle");
     if (!sheet) return;
     closeLang();
-    sheet.hidden = false;
+    sheet.classList.add("is-open");
     btn?.setAttribute("aria-expanded", "true");
   }
 
@@ -189,14 +191,15 @@
     const sheet = document.getElementById("sheet-menu");
     const btn = document.getElementById("menu-toggle");
     if (!sheet) return;
-    sheet.hidden = true;
+    sheet.classList.remove("is-open");
     btn?.setAttribute("aria-expanded", "false");
   }
 
   function toggleMenu() {
     const sheet = document.getElementById("sheet-menu");
-    if (!sheet || sheet.hidden) openMenu();
-    else closeMenu();
+    if (!sheet) return;
+    if (sheet.classList.contains("is-open")) closeMenu();
+    else openMenu();
   }
 
   function openLang() {
@@ -204,7 +207,7 @@
     const btn = document.getElementById("lang-toggle");
     if (!menu) return;
     closeMenu();
-    menu.hidden = false;
+    menu.classList.add("is-open");
     btn?.setAttribute("aria-expanded", "true");
   }
 
@@ -212,14 +215,15 @@
     const menu = document.getElementById("lang-menu");
     const btn = document.getElementById("lang-toggle");
     if (!menu) return;
-    menu.hidden = true;
+    menu.classList.remove("is-open");
     btn?.setAttribute("aria-expanded", "false");
   }
 
   function toggleLang() {
     const menu = document.getElementById("lang-menu");
-    if (!menu || menu.hidden) openLang();
-    else closeLang();
+    if (!menu) return;
+    if (menu.classList.contains("is-open")) closeLang();
+    else openLang();
   }
 
   function showAppsSection(scroll) {
