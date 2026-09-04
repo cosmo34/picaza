@@ -359,24 +359,24 @@ body.modal-open { overflow: hidden; }
   padding-bottom: 1rem;
 }
 .hero-showcase {
-  position: relative;
+  display: grid;
   width: 100%;
-  min-height: clamp(220px, 36vh, 340px);
 }
 .hero-slide {
-  position: absolute;
-  inset: 0;
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  gap: 0.85rem;
-  align-items: center;
-  justify-content: start;
+  grid-area: 1 / 1;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 1.25rem;
   opacity: 0;
+  visibility: hidden;
   pointer-events: none;
-  transition: opacity 0.85s var(--ease);
+  transition: opacity 0.85s var(--ease), visibility 0.85s var(--ease);
+  z-index: 0;
 }
 .hero-slide.is-active {
   opacity: 1;
+  visibility: visible;
   pointer-events: auto;
   z-index: 1;
 }
@@ -412,7 +412,14 @@ body.modal-open { overflow: hidden; }
   color: var(--muted);
   font-size: clamp(0.95rem, 1.8vw, 1.08rem);
   line-height: 1.45;
-  max-width: 22rem;
+  max-width: 28rem;
+}
+.hero-slide-shots {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+  width: 100%;
+  max-width: 36rem;
 }
 .hero-slide-shot {
   margin: 0;
@@ -421,9 +428,7 @@ body.modal-open { overflow: hidden; }
   border: 1px solid var(--line);
   background: rgba(255, 255, 255, 0.03);
   aspect-ratio: 16 / 10;
-  width: min(42vw, 380px);
-  max-height: min(34vh, 300px);
-  justify-self: start;
+  width: 100%;
 }
 .hero-slide-shot img {
   width: 100%;
@@ -434,16 +439,19 @@ body.modal-open { overflow: hidden; }
 }
 .hero-slide-shot.is-portrait {
   aspect-ratio: 3 / 4;
-  max-width: min(42vw, 220px);
-  max-height: min(36vh, 320px);
+}
+.hero-slide-shots:has(.is-portrait) {
+  max-width: 22rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 .hero-slide-shot.is-icon-only {
   aspect-ratio: 1;
-  max-width: min(40vw, 200px);
-  max-height: min(32vh, 220px);
   display: grid;
   place-items: center;
   background: linear-gradient(160deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+}
+.hero-slide-shots:has(.is-icon-only) {
+  max-width: 16rem;
 }
 .hero-slide-shot.is-icon-only img {
   width: 58%;
@@ -517,27 +525,11 @@ body.modal-open { overflow: hidden; }
 
 @media (max-width: 800px) {
   .hero { min-height: auto; padding-top: 1rem; padding-bottom: 3rem; }
-  .hero-layout { gap: 1.75rem; justify-content: flex-start; }
-  .hero-showcase { min-height: 280px; }
-  .hero-slide {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr;
-    gap: 1rem;
-  }
-  .hero-slide-shot {
-    justify-self: start;
-    max-width: 100%;
-    max-height: 200px;
-    aspect-ratio: 16 / 10;
-  }
-  .hero-slide-shot.is-portrait {
-    max-width: 160px;
-    max-height: 210px;
-  }
-  .hero-slide-shot.is-icon-only {
-    max-width: 140px;
-    max-height: 140px;
-  }
+  .hero-layout { gap: 2.75rem; justify-content: flex-start; }
+  .hero-slide { gap: 1.5rem; }
+  .hero-slide-shots { gap: 0.65rem; max-width: 100%; }
+  .hero-slide-shots:has(.is-portrait) { max-width: 100%; }
+  .hero-slide-shots:has(.is-icon-only) { max-width: 12rem; }
 }
 
 @keyframes rise {
