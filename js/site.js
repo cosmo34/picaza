@@ -446,6 +446,7 @@
   document.addEventListener("DOMContentLoaded", () => {
     buildNav();
     buildContactModal();
+    buildShowcase();
     wireEvents();
     initNavScroll();
     applyLocale();
