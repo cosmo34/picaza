@@ -46,11 +46,9 @@ Propagation DNS : quelques minutes à 48 h.
 
 ## Apps listées
 
-- GOWAY
-- Cot Cot
-- Master Cell
-- Viewzy
-- Oculus
-- Jumpy (bientôt)
+- **GOWAY** — mobilité Montpellier (fiche complète ; App Store à venir)
+- **Viewzy** — iPad, lien App Store + captures
+- **Oculus** — Mac, lien Mac App Store + captures
 
-Quand une app est sur l’App Store, ajoute le lien dans `js/main.js` (`store`) et sur la fiche `apps/*.html`.
+Les captures Viewzy / Oculus sont tirées de la fiche publique App Store (API iTunes).
+Quand GOWAY sera publié, ajoute son Apple ID dans `js/store-meta.json` puis régénère la fiche.
