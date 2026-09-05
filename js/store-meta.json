@@ -3,12 +3,16 @@
     "trackId": 6806571587,
     "name": "GOWAY",
     "bundleId": "fr.goway.app",
-    "url": null,
+    "url": "https://apps.apple.com/app/id6806571587",
     "version": "1.0",
-    "state": "PREPARE_FOR_SUBMISSION",
+    "state": "WAITING_FOR_REVIEW",
     "description": "GOWAY est l’application de mobilité pour la Métropole de Montpellier. Elle s’appuie sur les données open data TaM (GTFS / GTFS-RT) pour afficher les départs en temps réel, construire des trajets multimodaux et guider l’utilisateur étape par étape.\n\nConçue pour être rapide et lisible : carte sombre, pastilles de départs, navigation in-app, Live Activities iOS, widgets et options d’accessibilité.",
-    "icon": null,
-    "screenshots": [],
+    "icon": "assets/goway-icon.png?v=20260904g",
+    "screenshots": [
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/5f/6a/b2/5f6ab2b6-a03a-bb88-9a42-75943897e8c7/01-map.png/1284x2778bb.png",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/5f/25/f3/5f25f363-f067-abc0-7744-2acd8d7ed28c/02-schedules.png/1284x2778bb.png",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/12/45/e6/1245e65f-bf5f-9a62-cdd8-037e754af82e/03-settings.png/1284x2778bb.png"
+    ],
     "supportUrl": null,
     "keywords": null
   },

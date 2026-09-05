@@ -48,8 +48,11 @@
       id: "goway",
       name: "GOWAY",
       icon: "assets/goway-icon.png?v=20260904g",
-      shots: ["assets/goway-icon.png?v=20260904g", "assets/goway-icon.png?v=20260904g"],
-      shotStyle: "icon",
+      shots: [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/5f/6a/b2/5f6ab2b6-a03a-bb88-9a42-75943897e8c7/01-map.png/1284x2778bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/5f/25/f3/5f25f363-f067-abc0-7744-2acd8d7ed28c/02-schedules.png/1284x2778bb.png",
+      ],
+      shotStyle: "portrait",
       href: "apps/goway.html",
     },
   ];
