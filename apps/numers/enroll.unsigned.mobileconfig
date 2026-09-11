@@ -20,9 +20,9 @@
 	<key>PayloadDescription</key>
 	<string>Envoie l’identifiant de cet iPhone à Picaza pour autoriser l’installation de NUMERS. Vous pouvez supprimer ce profil ensuite.</string>
 	<key>PayloadIdentifier</key>
-	<string>fr.picaza.numers.enroll.v2</string>
+	<string>fr.picaza.numers.enroll.v3</string>
 	<key>PayloadUUID</key>
-	<string>E7C2B91A-4D58-4F03-9C6E-1A8B5D7F2E40</string>
+	<string>A1F6C3E8-2B47-4D90-9E15-6C8A0D34B72F</string>
 	<key>PayloadType</key>
 	<string>Profile Service</string>
 	<key>PayloadVersion</key>
