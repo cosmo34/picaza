@@ -67,39 +67,14 @@ if (!$already) {
 }
 
 header('Content-Type: application/x-apple-aspen-config');
-header('Content-Disposition: inline; filename="numers-enrolled.mobileconfig"');
 $signed = __DIR__ . '/enrolled.mobileconfig';
 if (is_file($signed)) {
+    header('Content-Length: ' . (string) filesize($signed));
     readfile($signed);
     exit;
 }
 
-echo <<<'PLIST'
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>PayloadContent</key>
-	<array/>
-	<key>PayloadDisplayName</key>
-	<string>NUMERS — iPhone enregistré</string>
-	<key>PayloadDescription</key>
-	<string>Cet iPhone est enregistré pour NUMERS. Vous pouvez supprimer ce profil. L’app sera installable dès qu’elle sera mise à jour pour cet appareil.</string>
-	<key>PayloadIdentifier</key>
-	<string>fr.picaza.numers.enrolled</string>
-	<key>PayloadOrganization</key>
-	<string>Picaza</string>
-	<key>PayloadRemovalDisallowed</key>
-	<false/>
-	<key>PayloadType</key>
-	<string>Configuration</string>
-	<key>PayloadUUID</key>
-	<string>B4A9D2F1-8C65-4E02-B7D3-98E1A4C6B5D7</string>
-	<key>PayloadVersion</key>
-	<integer>1</integer>
-</dict>
-</plist>
-PLIST;
+readfile(__DIR__ . '/enrolled.unsigned.mobileconfig');
 
 function plist_string(string $xml, string $key): string
 {

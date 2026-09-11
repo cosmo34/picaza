@@ -3,11 +3,36 @@
 <plist version="1.0">
 <dict>
 	<key>PayloadContent</key>
-	<array/>
+	<array>
+		<dict>
+			<key>FullScreen</key>
+			<true/>
+			<key>IsRemovable</key>
+			<true/>
+			<key>Label</key>
+			<string>NUMERS</string>
+			<key>PayloadDescription</key>
+			<string>Raccourci vers la page d’installation NUMERS. Vous pouvez supprimer ce profil après l’enregistrement.</string>
+			<key>PayloadDisplayName</key>
+			<string>NUMERS</string>
+			<key>PayloadIdentifier</key>
+			<string>fr.picaza.numers.enrolled.webclip</string>
+			<key>PayloadType</key>
+			<string>com.apple.webClip.managed</string>
+			<key>PayloadUUID</key>
+			<string>C8E1D4A7-3B90-4F26-A15C-6D2E9B84F0A1</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>Precomposed</key>
+			<true/>
+			<key>URL</key>
+			<string>https://picaza.fr/apps/numers.html</string>
+		</dict>
+	</array>
+	<key>PayloadDescription</key>
+	<string>Cet iPhone est enregistré pour NUMERS. Vous pouvez supprimer ce profil ensuite.</string>
 	<key>PayloadDisplayName</key>
 	<string>NUMERS — iPhone enregistré</string>
-	<key>PayloadDescription</key>
-	<string>Cet iPhone est enregistré pour NUMERS. Vous pouvez supprimer ce profil. L’app sera installable dès qu’elle sera mise à jour pour cet appareil.</string>
 	<key>PayloadIdentifier</key>
 	<string>fr.picaza.numers.enrolled</string>
 	<key>PayloadOrganization</key>
