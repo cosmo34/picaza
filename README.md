@@ -46,9 +46,9 @@ Propagation DNS : quelques minutes à 48 h.
 
 ## Apps listées
 
-- **GOWAY** — mobilité Montpellier (fiche complète ; App Store à venir)
 - **Viewzy** — iPad, lien App Store + captures
-- **Oculus** — Mac, lien Mac App Store + captures
+- **Oculus** — Mac, lien Mac App Store + captures (v2.0.7)
+- **GOWAY** — iOS / iPadOS, lien App Store (v1.1)
+- **NUMERS** — iPhone / Mac ; iOS en review App Store, zip Mac en téléchargement direct
 
-Les captures Viewzy / Oculus sont tirées de la fiche publique App Store (API iTunes).
-Quand GOWAY sera publié, ajoute son Apple ID dans `js/store-meta.json` puis régénère la fiche.
+Les captures Viewzy / Oculus / GOWAY sont tirées de la fiche publique App Store (API iTunes).

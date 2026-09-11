@@ -1,19 +1,36 @@
 {
+  "numers": {
+    "trackId": 6811026740,
+    "name": "NUMERS",
+    "bundleId": "fr.picaza.numers",
+    "url": "https://apps.apple.com/app/id6811026740",
+    "version": "1.0",
+    "state": "WAITING_FOR_REVIEW",
+    "description": "NUMERS relie les numéros de photos aux cavaliers d’un concours. Sur iPhone, vous saisissez les paires n° photo → n° attribué. Sur Mac, le programme et les dossiers photos se classent tout seuls.",
+    "icon": "assets/numers-icon.png?v=20260911s",
+    "screenshots": [
+      "assets/numers/01-jours.jpg",
+      "assets/numers/02-tableurs.jpg",
+      "assets/numers/03-saisie.jpg"
+    ],
+    "supportUrl": "https://picaza.fr/support/numers/",
+    "keywords": "photo,concours,cavalier,numéro,photographe,équitation,tableur,cso,dossard,iphone"
+  },
   "goway": {
     "trackId": 6806571587,
     "name": "GOWAY",
     "bundleId": "fr.goway.app",
-    "url": "https://apps.apple.com/app/id6806571587",
-    "version": "1.0",
-    "state": "WAITING_FOR_REVIEW",
-    "description": "GOWAY est l’application de mobilité pour la Métropole de Montpellier. Elle s’appuie sur les données open data TaM (GTFS / GTFS-RT) pour afficher les départs en temps réel, construire des trajets multimodaux et guider l’utilisateur étape par étape.\n\nConçue pour être rapide et lisible : carte sombre, pastilles de départs, navigation in-app, Live Activities iOS, widgets et options d’accessibilité.",
-    "icon": "assets/goway-icon.png?v=20260904g",
+    "url": "https://apps.apple.com/fr/app/goway/id6806571587",
+    "version": "1.1",
+    "state": "READY_FOR_SALE",
+    "description": "GOWAY vous aide à vous déplacer sur le réseau TaM (Métropole de Montpellier) :\n\n• Horaires tram et bus en temps réel\n• Itinéraires multimodaux (marche + transport)\n• Navigation guidée étape par étape\n• Live Activities iOS pendant le trajet\n• Widgets et suivi d’arrêt\n• Recherche de destinations et lieux\n• Alertes trafic\n• 7 langues et options d’accessibilité (VoiceOver, contraste, RTL)\n\nDonnées open data TaM (licence ODbL). Connexion Internet requise. Fonctionne principalement à Montpellier et alentours.",
+    "icon": "assets/goway-icon.png?v=20260911s",
     "screenshots": [
-      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/5f/6a/b2/5f6ab2b6-a03a-bb88-9a42-75943897e8c7/01-map.png/1284x2778bb.png",
-      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/5f/25/f3/5f25f363-f067-abc0-7744-2acd8d7ed28c/02-schedules.png/1284x2778bb.png",
-      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/12/45/e6/1245e65f-bf5f-9a62-cdd8-037e754af82e/03-settings.png/1284x2778bb.png"
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/01/35/d6/0135d683-7eee-6fb7-7e8b-87fa13ee8afe/01-map.png/1284x2778bb.png",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/b5/bd/bf/b5bdbfaf-7e7d-456e-2bab-30179dc8c9c8/02-schedules.png/1284x2778bb.png",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/c6/a2/af/c6a2af92-2c7a-07a3-c9ca-044c20f2b5da/03-settings.png/1284x2778bb.png"
     ],
-    "supportUrl": null,
+    "supportUrl": "https://picaza.fr/support/goway/",
     "keywords": null
   },
   "viewzy": {
@@ -24,7 +41,7 @@
     "version": "1.2.2",
     "state": "READY_FOR_SALE",
     "description": "Viewzy est une application iPad conçue pour parcourir facilement vos serveurs de fichiers sur le réseau local, consulter vos médias et organiser vos sélections en quelques gestes.\n\nFonctionnalités principales\n\nConnexion à vos serveurs FTP, SFTP et SMB\nNavigation rapide dans les dossiers avec fil d’Ariane\nAffichage des fichiers en grille ou en liste\nRecherche de fichiers et dossiers\nTri par nom, date et taille\nPrévisualisation plein écran des photos\nLecture vidéo intégrée\nGénération et affichage de miniatures optimisées pour les gros dossiers\nRegroupement des fichiers par jour pour une lecture plus claire\n\nPanier et partage\n\nAjout d’un ou plusieurs fichiers au panier\nSélection de produit et de dossier lors de l’ajout\nDétection des doublons avant transfert\nExport et partage via les options iOS/iPadOS (dont AirDrop)\n\nPersonnalisation et réglages\n\nRéglages d’interface (tailles de textes, icônes, miniatures)\nMasquage des extensions de fichiers\nParamètres de lecture vidéo\nParamètres de tri et d’affichage\nPersonnalisation visuelle (logo, filigrane image/opacity)\n\nPerformance et contrôle\n\nConçue pour les dossiers volumineux\nCache local avec outils de nettoyage\nDiagnostic de performances des miniatures\nGestion de l’inactivité et réinitialisation automatique configurable\n\nSécurité\n\nGestion de l’accès aux réglages (code/verrouillage)\nConnexions réseau selon le protocole configuré\nGestion des serveurs et des préférences de manière centralisée\n\nConditions d’utilisation (EULA) : https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
-    "icon": "assets/viewzy-icon.png?v=20260904v2b",
+    "icon": "assets/viewzy-icon.png?v=20260911s",
     "screenshots": [
       "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/fa/1d/e2/fa1de287-5791-8184-7693-3763d70bbb05/Simulator_Screenshot_-_iPad_Pro_13-inch__U0028M5_U0029_-_2026-06-12_at_12.47.30.png/2064x2752bb.png",
       "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/a8/94/78/a89478a3-3fa6-3e0b-b787-2c2c7449f47f/Simulator_Screenshot_-_iPad_Pro_13-inch__U0028M5_U0029_-_2026-06-12_at_12.47.39.png/2064x2752bb.png",
@@ -32,7 +49,7 @@
       "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/bb/03/42/bb034225-3c8c-f0b0-adfa-bfc255db2d55/Simulator_Screenshot_-_iPad_Pro_13-inch__U0028M5_U0029_-_2026-06-12_at_12.47.56.png/2064x2752bb.png",
       "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/1c/c2/41/1cc2412c-ac45-cc27-8709-0a84270361b7/Simulator_Screenshot_-_iPad_Pro_13-inch__U0028M5_U0029_-_2026-06-12_at_12.48.04.png/2064x2752bb.png"
     ],
-    "supportUrl": "https://cosmo34.github.io/viewzy-pages/support.html",
+    "supportUrl": "https://picaza.fr/support/viewzy/",
     "keywords": "ftp,sftp,smb,serveur,fichiers,photos,vidéos,ipad,réseau,partage,panier,airdrop,explorateur,nas,local"
   },
   "oculus": {
@@ -40,17 +57,17 @@
     "name": "Oculus",
     "bundleId": "fr.VisionFlux",
     "url": "https://apps.apple.com/fr/app/oculus/id6776262110?mt=12",
-    "version": "2.0",
+    "version": "2.0.7",
     "state": "READY_FOR_SALE",
-    "description": "Oculus est le studio vidéo natif pour Mac qui élève votre production — de la prise de vue à la diffusion, du montage à la livraison finale. Pensé pour Apple Silicon, il offre une interface sobre et professionnelle, des pipelines indépendants et une précision de réglage digne d’une régie broadcast.\n\nCAPTURE\n\nEnregistrez avec maîtrise, quelle que soit votre source.\n\nCaméras et périphériques vidéo USB / HDMI\nCapture d’écran haute performance (ScreenCaptureKit)\nFlux réseau : RTSP, RTMP, HTTP, HLS…\nCanevas HD, Full HD, 4K ou natif — jusqu’à 60 images/s\nCodecs d’enregistrement : H.264, HEVC, ProRes (422 LT, HQ, 4444)\nDébit VBR ou CBR, réglages audio avancés et vumètres en temps réel\nFiltres image cinématographiques : Cinéma, Portrait, Documentaire, Teal & Orange, Noir, Low Light…\nPréréglages personnalisés mémorisés\nIncrustations multi-calques : logos, images, vidéos fond vert, chroma key et modes de fusion\nTransfert automatique vers vos dossiers de production\n\nDIFFUSION LIVE\n\nDiffusez en direct avec la sérénité d’un outil de régie.\n\nPlateformes prêtes à l’emploi : YouTube, Twitch, Facebook, Vimeo, Kick, Instagram\nServeurs personnalisés : RTMP, RTMPS, SRT, RTSP, HLS, RIST\nPipeline de diffusion indépendant de la capture\nEffets instantanés vidéo et audio pendant le live\nFiltres image et incrustations dédiés à la diffusion\nEnregistrement simultané pendant le stream, sans compromis sur la fluidité\nTableau de bord de diffusion : statut, débit, encodeur, diagnostics\n\nMONTAGE\n\nAssemblez vos rushes dans le même environnement.\n\nTimeline multi-pistes\nGlisser-déposer libre ou insertion séquentielle\nTransitions et animations\nContrôle de la vitesse des clips\nExport intégré vers vos formats de livraison\n\nCONVERSION\n\nTransformez et livrez à l’échelle.\n\nConversion par lots vers une large bibliothèque de formats\nH.264, HEVC, ProRes, AV1 (SVT-AV1), MKV, MOV, MP4, AVI, M4V, 3GP…\nProfils optimisés : web, broadcast, mobile, qualité maximale, faible taille\nProgression en temps réel, file d’attente intelligente\n\nCONÇU POUR LE PROFESSIONNEL\n\nOculus n’est pas un gadget : c’est un poste de travail vidéo complet sur Mac.\n\nInterface sombre, lisible, pensée pour de longues sessions\nEspaces de travail Capture et Diffusion totalement séparés\nRéglages persistants : sources, incrustations, filtres, dossiers favoris\nRelocalisation automatique des médias si un fichier a été déplacé\nOptimisé pour macOS 14 et Apple Silicon\nRespect de la confidentialité : traitement local, sandbox Apple\n\nABONNEMENTS MODULAIRES\n\nEssayez gratuitement, puis débloquez uniquement ce dont vous avez besoin :\nCapture, Diffusion, Montage, Conversion — ou l’accès Complet pour l’ensemble du studio.\n\nPOUR QUI ?\n\nCréateurs de contenu, streamers, vidéastes indépendants, associations, entreprises, formateurs, régisseurs événementiels et toute personne qui souhaite produire et diffuser une image soignée, sans quitter son Mac.\n\nTéléchargez Oculus. Prenez le contrôle de votre image.\n\nConditions d’utilisation (EULA) : https://www.apple.com/legal/internet-services/itunes/dev/stdeula/\nPolitique de confidentialité : https://cosmo34.github.io/visionflux-pages/privacy-policy.html",
-    "icon": "assets/oculus-icon.png?v=20260904v4",
+    "description": "Oculus est le studio vidéo natif pour Mac qui élève votre production — de la prise de vue à la diffusion, du montage à la livraison finale. Pensé pour Apple Silicon, il offre une interface sobre et professionnelle, des pipelines indépendants et une précision de réglage digne d’une régie broadcast.\n\nCAPTURE\n\nEnregistrez avec maîtrise, quelle que soit votre source.\n\nCaméras et périphériques vidéo USB / HDMI\nCapture d’écran haute performance (ScreenCaptureKit)\nFlux réseau : RTSP, RTMP, HTTP, HLS…\nCanevas HD, Full HD, 4K ou natif — jusqu’à 60 images/s\nCodecs d’enregistrement : H.264, HEVC, ProRes (422 LT, HQ, 4444)\nDébit VBR ou CBR, réglages audio avancés et vumètres en temps réel\nFiltres image cinématographiques : Cinéma, Portrait, Documentaire, Teal & Orange, Noir, Low Light…\nPréréglages personnalisés mémorisés\nIncrustations multi-calques : logos, images, vidéos fond vert, chroma key et modes de fusion\nTransfert automatique vers vos dossiers de production\n\nDIFFUSION LIVE\n\nDiffusez en direct avec la sérénité d’un outil de régie.\n\nPlateformes prêtes à l’emploi : YouTube, Twitch, Facebook, Vimeo, Kick, Instagram\nServeurs personnalisés : RTMP, RTMPS, SRT, RTSP, HLS, RIST\nPipeline de diffusion indépendant de la capture\nEffets instantanés vidéo et audio pendant le live\nFiltres image et incrustations dédiés à la diffusion\nEnregistrement simultané pendant le stream, sans compromis sur la fluidité\nTableau de bord de diffusion : statut, débit, encodeur, diagnostics\n\nMONTAGE\n\nAssemblez vos rushes dans le même environnement.\n\nTimeline multi-pistes\nGlisser-déposer libre ou insertion séquentielle\nTransitions et animations\nContrôle de la vitesse des clips\nExport intégré vers vos formats de livraison\n\nCONVERSION\n\nTransformez et livrez à l’échelle.\n\nConversion par lots vers une large bibliothèque de formats\nH.264, HEVC, ProRes, AV1 (SVT-AV1), MKV, MOV, MP4, AVI, M4V, 3GP…\nProfils optimisés : web, broadcast, mobile, qualité maximale, faible taille\nProgression en temps réel, file d’attente intelligente\n\nCONÇU POUR LE PROFESSIONNEL\n\nOculus n’est pas un gadget : c’est un poste de travail vidéo complet sur Mac.\n\nInterface sombre, lisible, pensée pour de longues sessions\nEspaces de travail Capture et Diffusion totalement séparés\nRéglages persistants : sources, incrustations, filtres, dossiers favoris\nRelocalisation automatique des médias si un fichier a été déplacé\nOptimisé pour macOS 14 et Apple Silicon\nRespect de la confidentialité : traitement local, sandbox Apple\n\nABONNEMENTS MODULAIRES\n\nEssayez gratuitement, puis débloquez uniquement ce dont vous avez besoin :\nCapture, Diffusion, Montage, Conversion — ou l’accès Complet pour l’ensemble du studio.\n\nPOUR QUI ?\n\nCréateurs de contenu, streamers, vidéastes indépendants, associations, entreprises, formateurs, régisseurs événementiels et toute personne qui souhaite produire et diffuser une image soignée, sans quitter son Mac.\n\nTéléchargez Oculus. Prenez le contrôle de votre image.\n\nConditions d’utilisation (EULA) : https://www.apple.com/legal/internet-services/itunes/dev/stdeula/\nPolitique de confidentialité : https://picaza.fr/privacy/oculus/",
+    "icon": "assets/oculus-icon.png?v=20260911s",
     "screenshots": [
       "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/a7/44/c9/a744c94c-a635-7e92-00b2-f1f53e2647c4/Capture_d_U2019e_U0301cran.png/2880x1800bb.png",
       "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/7c/fa/b6/7cfab68b-1592-37ef-82dd-b881010c4aa0/Capture_d_U2019e_U0301cran_2.png/2560x1600bb.png",
       "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/da/8a/cf/da8acf08-a24f-f930-c1ac-2ffc247570a4/Capture_d_U2019e_U0301cran_3.png/2560x1600bb.png",
       "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/96/d9/ca/96d9ca29-6173-3a02-c61d-62e76a542638/Capture_d_U2019e_U0301cran_4.png/2880x1800bb.png"
     ],
-    "supportUrl": "https://cosmo34.github.io/visionflux-pages/support.html",
+    "supportUrl": "https://picaza.fr/support/oculus/",
     "keywords": "vidéo,capture,live,stream,RTMP,Twitch,YouTube,montage,ProRes,HEVC,AV1,enregistrement,Mac"
   }
 }

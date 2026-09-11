@@ -7,15 +7,15 @@ const apps = [
       "iOS",
       "Android"
     ],
-    "status": "draft",
-    "statusLabel": "Bientôt",
+    "status": "live",
+    "statusLabel": "Sur l’App Store",
     "accent": "#5B8DEF",
     "wide": true,
-    "icon": "assets/goway-icon.png?v=20260904g",
+    "icon": "assets/goway-icon.png?v=20260911s",
     "href": "apps/goway.html",
-    "store": null,
+    "store": "https://apps.apple.com/fr/app/goway/id6806571587",
     "ascId": "6806571587",
-    "ascState": "PREPARE_FOR_SUBMISSION"
+    "ascState": "READY_FOR_SALE"
   },
   {
     "id": "viewzy",
@@ -28,7 +28,7 @@ const apps = [
     "statusLabel": "Sur l’App Store",
     "accent": "#00D0C8",
     "wide": false,
-    "icon": "assets/viewzy-icon.png?v=20260904v2b",
+    "icon": "assets/viewzy-icon.png?v=20260911s",
     "href": "apps/viewzy.html",
     "store": "https://apps.apple.com/fr/app/viewzy/id6774137587",
     "ascId": "6774137587",
@@ -46,7 +46,7 @@ const apps = [
     "statusLabel": "Sur l’App Store",
     "accent": "#00D0C8",
     "wide": false,
-    "icon": "assets/oculus-icon.png?v=20260904v4",
+    "icon": "assets/oculus-icon.png?v=20260911s",
     "href": "apps/oculus.html",
     "store": "https://apps.apple.com/fr/app/oculus/id6776262110?mt=12",
     "ascId": "6776262110",

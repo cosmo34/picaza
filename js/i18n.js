@@ -42,7 +42,7 @@ window.PICAZA_I18N = {
       enroll_ios: "Enregistrer cet iPhone",
       install_mac: "Télécharger pour Mac",
       install_note:
-        "Sur iPhone, ouvrez cette page dans Safari. Touchez Enregistrer cet iPhone : le profil est signé avec le compte développeur Picaza. Autorisez-le dans Réglages → Général → VPN et gestion de l’appareil, puis installez NUMERS.",
+        "NUMERS iPhone et iPad arrivent sur l’App Store. En attendant, l’app Mac reste téléchargeable ci-dessous.",
       privacy_btn: "Confidentialité",
       support_btn: "Support",
       privacy_hub_title: "Confidentialité",
@@ -71,7 +71,7 @@ window.PICAZA_I18N = {
       tagline_oculus:
         "Oculus est le studio vidéo natif pour Mac qui élève votre production — de la prise de vue à la diffusion, du montage à la livraison finale. Pensé pour Apple Silicon, il offre une interface sobre et professionnelle, des pipelines indépendants et une précision de réglage digne d’une régie broadcast.",
       tagline_goway:
-        "GOWAY est l’application de mobilité pour la Métropole de Montpellier. Elle s’appuie sur les données open data TaM (GTFS / GTFS-RT) pour afficher les départs en temps réel, construire des trajets multimodaux et guider l’utilisateur étape par étape.",
+        "GOWAY vous aide à vous déplacer sur le réseau TaM (Métropole de Montpellier) : horaires en temps réel, itinéraires multimodaux, navigation guidée, Live Activities et widgets.",
       tagline_numers:
         "NUMERS relie les numéros de photos aux cavaliers d’un concours. Sur iPhone, vous saisissez les paires n° photo → n° attribué. Sur Mac, le programme et les dossiers photos se classent tout seuls.",
     },
@@ -104,7 +104,7 @@ window.PICAZA_I18N = {
       enroll_ios: "Register this iPhone",
       install_mac: "Download for Mac",
       install_note:
-        "On iPhone, open this page in Safari. Tap Register this iPhone: the profile is signed with the Picaza developer account. Allow it in Settings → General → VPN & Device Management, then install NUMERS.",
+        "NUMERS for iPhone and iPad is coming to the App Store. The Mac app can still be downloaded below.",
       privacy_btn: "Privacy",
       support_btn: "Support",
       privacy_hub_title: "Privacy",

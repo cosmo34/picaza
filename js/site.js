@@ -8,7 +8,7 @@
       name: "Viewzy",
       platforms: ["iPadOS"],
       accent: "#00D0C8",
-      icon: "assets/viewzy-icon.png?v=20260904v2b",
+      icon: "assets/viewzy-icon.png?v=20260911s",
       store: "https://apps.apple.com/fr/app/viewzy/id6774137587",
     },
     {
@@ -16,15 +16,24 @@
       name: "Oculus",
       platforms: ["macOS", "Apple Silicon"],
       accent: "#00D0C8",
-      icon: "assets/oculus-icon.png?v=20260904v4",
+      icon: "assets/oculus-icon.png?v=20260911s",
       store: "https://apps.apple.com/fr/app/oculus/id6776262110?mt=12",
+    },
+    {
+      id: "goway",
+      name: "GOWAY",
+      platforms: ["iOS", "iPadOS"],
+      accent: "#5B8DEF",
+      icon: "assets/goway-icon.png?v=20260911s",
+      store: "https://apps.apple.com/fr/app/goway/id6806571587",
     },
     {
       id: "numers",
       name: "NUMERS",
       platforms: ["iOS", "macOS"],
       accent: "#c8f06c",
-      icon: "assets/numers-icon.png?v=20260911p",
+      icon: "assets/numers-icon.png?v=20260911s",
+      soon: true,
     },
   ];
 
@@ -32,7 +41,7 @@
     {
       id: "viewzy",
       name: "Viewzy",
-      icon: "assets/viewzy-icon.png?v=20260904v2b",
+      icon: "assets/viewzy-icon.png?v=20260911s",
       shots: [
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/fa/1d/e2/fa1de287-5791-8184-7693-3763d70bbb05/Simulator_Screenshot_-_iPad_Pro_13-inch__U0028M5_U0029_-_2026-06-12_at_12.47.30.png/2064x2752bb.png",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/a8/94/78/a89478a3-3fa6-3e0b-b787-2c2c7449f47f/Simulator_Screenshot_-_iPad_Pro_13-inch__U0028M5_U0029_-_2026-06-12_at_12.47.39.png/2064x2752bb.png",
@@ -43,7 +52,7 @@
     {
       id: "oculus",
       name: "Oculus",
-      icon: "assets/oculus-icon.png?v=20260904v4",
+      icon: "assets/oculus-icon.png?v=20260911s",
       shots: [
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/a7/44/c9/a744c94c-a635-7e92-00b2-f1f53e2647c4/Capture_d_U2019e_U0301cran.png/2880x1800bb.png",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/7c/fa/b6/7cfab68b-1592-37ef-82dd-b881010c4aa0/Capture_d_U2019e_U0301cran_2.png/2560x1600bb.png",
@@ -54,10 +63,10 @@
     {
       id: "goway",
       name: "GOWAY",
-      icon: "assets/goway-icon.png?v=20260904g",
+      icon: "assets/goway-icon.png?v=20260911s",
       shots: [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/5f/6a/b2/5f6ab2b6-a03a-bb88-9a42-75943897e8c7/01-map.png/1284x2778bb.png",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/5f/25/f3/5f25f363-f067-abc0-7744-2acd8d7ed28c/02-schedules.png/1284x2778bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/01/35/d6/0135d683-7eee-6fb7-7e8b-87fa13ee8afe/01-map.png/1284x2778bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/b5/bd/bf/b5bdbfaf-7e7d-456e-2bab-30179dc8c9c8/02-schedules.png/1284x2778bb.png",
       ],
       shotStyle: "portrait",
       href: "apps/goway.html",
@@ -65,9 +74,13 @@
     {
       id: "numers",
       name: "NUMERS",
-      icon: "assets/numers-icon.png?v=20260911p",
-      shots: [],
-      shotStyle: "icon",
+      icon: "assets/numers-icon.png?v=20260911s",
+      shots: [
+        "assets/numers/01-jours.jpg",
+        "assets/numers/02-tableurs.jpg",
+        "assets/numers/03-saisie.jpg",
+      ],
+      shotStyle: "portrait",
       href: "apps/numers.html",
     },
   ];
@@ -388,7 +401,9 @@
         const chips = [
           app.store
             ? `<span class="chip live">${t("status_store")}</span>`
-            : `<span class="chip">${t("status_direct")}</span>`,
+            : app.soon
+              ? `<span class="chip soon">${t("status_soon")}</span>`
+              : `<span class="chip">${t("status_direct")}</span>`,
           ...app.platforms.map((x) => `<span class="chip">${x}</span>`),
         ].join("");
         return `
