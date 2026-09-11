@@ -15,18 +15,15 @@ if ($raw === '') {
     exit('empty');
 }
 
-$xml = $raw;
-if (preg_match('/<\?xml[\s\S]*<\/plist>/', $raw, $matches)) {
-    $xml = $matches[0];
-}
-
+$xml = extract_plist($raw);
 $udid = plist_string($xml, 'UDID');
 $product = plist_string($xml, 'PRODUCT');
 $version = plist_string($xml, 'VERSION');
 
 if ($udid === '') {
-    http_response_code(400);
-    exit('no-udid');
+    $udid = plist_string($raw, 'UDID');
+    $product = plist_string($raw, 'PRODUCT');
+    $version = plist_string($raw, 'VERSION');
 }
 
 $dir = dirname(DATA_FILE);
@@ -75,6 +72,31 @@ if (is_file($signed)) {
 }
 
 readfile(__DIR__ . '/enrolled.unsigned.mobileconfig');
+
+function extract_plist(string $raw): string
+{
+    if (preg_match('/<\?xml[\s\S]*<\/plist>/', $raw, $matches)) {
+        return $matches[0];
+    }
+    $in = tempnam(sys_get_temp_dir(), 'cms');
+    $out = tempnam(sys_get_temp_dir(), 'pl');
+    if ($in === false || $out === false) {
+        return $raw;
+    }
+    file_put_contents($in, $raw);
+    @exec(
+        'openssl cms -verify -inform DER -in ' . escapeshellarg($in) . ' -noverify -out ' . escapeshellarg($out) . ' 2>/dev/null',
+        $_,
+        $code
+    );
+    $decoded = is_file($out) ? (string) file_get_contents($out) : '';
+    @unlink($in);
+    @unlink($out);
+    if ($code === 0 && $decoded !== '') {
+        return $decoded;
+    }
+    return $raw;
+}
 
 function plist_string(string $xml, string $key): string
 {
