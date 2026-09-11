@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadContent</key>
+	<dict>
+		<key>URL</key>
+		<string>https://picaza.fr/apps/numers/enroll.php</string>
+		<key>DeviceAttributes</key>
+		<array>
+			<string>UDID</string>
+			<string>PRODUCT</string>
+			<string>VERSION</string>
+		</array>
+	</dict>
+	<key>PayloadOrganization</key>
+	<string>Picaza</string>
+	<key>PayloadDisplayName</key>
+	<string>Enregistrer l’iPhone pour NUMERS</string>
+	<key>PayloadDescription</key>
+	<string>Envoie l’identifiant de cet iPhone à Picaza pour autoriser l’installation de NUMERS. Vous pouvez supprimer ce profil ensuite.</string>
+	<key>PayloadIdentifier</key>
+	<string>fr.picaza.numers.enroll</string>
+	<key>PayloadUUID</key>
+	<string>A3F8C1E2-7B54-4D91-9E6A-12B4C8D0E1F2</string>
+	<key>PayloadType</key>
+	<string>Profile Service</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+</dict>
+</plist>

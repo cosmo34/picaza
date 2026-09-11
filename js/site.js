@@ -24,7 +24,7 @@
       name: "NUMERS",
       platforms: ["iOS", "macOS"],
       accent: "#c8f06c",
-      icon: "assets/numers-icon.png?v=20260911n",
+      icon: "assets/numers-icon.png?v=20260911p",
     },
   ];
 
@@ -65,7 +65,7 @@
     {
       id: "numers",
       name: "NUMERS",
-      icon: "assets/numers-icon.png?v=20260911n",
+      icon: "assets/numers-icon.png?v=20260911p",
       shots: [],
       shotStyle: "icon",
       href: "apps/numers.html",
