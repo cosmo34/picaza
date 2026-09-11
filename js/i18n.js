@@ -36,7 +36,12 @@ window.PICAZA_I18N = {
       menu_apps: "Applications",
       status_store: "Sur l’App Store",
       status_soon: "Bientôt",
+      status_direct: "Installation directe",
       store_btn: "Voir sur l’App Store",
+      install_ios: "Installer sur iPhone",
+      install_mac: "Télécharger pour Mac",
+      install_note:
+        "L’installation iPhone est réservée aux appareils enregistrés. Ouvrez cette page depuis Safari sur l’iPhone, puis validez l’app dans Réglages → Général → VPN et gestion de l’appareil.",
       privacy_btn: "Confidentialité",
       support_btn: "Support",
       privacy_hub_title: "Confidentialité",
@@ -59,12 +64,15 @@ window.PICAZA_I18N = {
       card_viewzy: "Parcourir serveurs locaux, médias et sélections sur iPad.",
       card_oculus: "Studio vidéo Mac — capture, live, montage, conversion.",
       card_goway: "Mobilité Montpellier TaM — horaires et itinéraires.",
+      card_numers: "Numéros de photos et dossiers cavaliers, iPhone et Mac.",
       tagline_viewzy:
         "Viewzy est une application iPad conçue pour parcourir facilement vos serveurs de fichiers sur le réseau local, consulter vos médias et organiser vos sélections en quelques gestes.",
       tagline_oculus:
         "Oculus est le studio vidéo natif pour Mac qui élève votre production — de la prise de vue à la diffusion, du montage à la livraison finale. Pensé pour Apple Silicon, il offre une interface sobre et professionnelle, des pipelines indépendants et une précision de réglage digne d’une régie broadcast.",
       tagline_goway:
         "GOWAY est l’application de mobilité pour la Métropole de Montpellier. Elle s’appuie sur les données open data TaM (GTFS / GTFS-RT) pour afficher les départs en temps réel, construire des trajets multimodaux et guider l’utilisateur étape par étape.",
+      tagline_numers:
+        "NUMERS relie les numéros de photos aux cavaliers d’un concours. Sur iPhone, vous saisissez les paires n° photo → n° attribué. Sur Mac, le programme et les dossiers photos se classent tout seuls.",
     },
     en: {
       nav_apps: "Apps",
@@ -89,7 +97,12 @@ window.PICAZA_I18N = {
       menu_apps: "Applications",
       status_store: "On the App Store",
       status_soon: "Coming soon",
+      status_direct: "Direct install",
       store_btn: "View on the App Store",
+      install_ios: "Install on iPhone",
+      install_mac: "Download for Mac",
+      install_note:
+        "iPhone install is limited to registered devices. Open this page in Safari on the iPhone, then trust the app in Settings → General → VPN & Device Management.",
       privacy_btn: "Privacy",
       support_btn: "Support",
       privacy_hub_title: "Privacy",
@@ -112,12 +125,15 @@ window.PICAZA_I18N = {
       card_viewzy: "Browse local servers, media and selections on iPad.",
       card_oculus: "Mac video studio — capture, live, edit, convert.",
       card_goway: "Montpellier TaM transit — schedules and routes.",
+      card_numers: "Photo numbers and rider folders, iPhone and Mac.",
       tagline_viewzy:
         "Viewzy is an iPad app designed to browse file servers on your local network, preview media and organize your selections in a few gestures.",
       tagline_oculus:
         "Oculus is the native Mac video studio that elevates your production — from capture to streaming, editing to final delivery. Built for Apple Silicon, with a clean professional interface, independent pipelines and broadcast-grade control.",
       tagline_goway:
         "GOWAY is the mobility app for the Montpellier Métropole. It uses TaM open data (GTFS / GTFS-RT) for real-time departures, multimodal routes and step-by-step guidance.",
+      tagline_numers:
+        "NUMERS links photo numbers to riders at a contest. On iPhone you enter photo number → assigned number pairs. On Mac, the programme and photo folders sort themselves.",
     },
     es: {
       nav_apps: "Apps",
@@ -142,7 +158,12 @@ window.PICAZA_I18N = {
       menu_apps: "Aplicaciones",
       status_store: "En el App Store",
       status_soon: "Pronto",
+      status_direct: "Instalación directa",
       store_btn: "Ver en el App Store",
+      install_ios: "Instalar en iPhone",
+      install_mac: "Descargar para Mac",
+      install_note:
+        "La instalación en iPhone está reservada a dispositivos registrados. Abra esta página en Safari en el iPhone y confíe en la app en Ajustes → General → VPN y gestión de dispositivos.",
       privacy_btn: "Privacidad",
       support_btn: "Soporte",
       privacy_hub_title: "Privacidad",
@@ -165,12 +186,15 @@ window.PICAZA_I18N = {
       card_viewzy: "Servidores locales, medios y selecciones en iPad.",
       card_oculus: "Estudio de vídeo Mac — captura, live, montaje, conversión.",
       card_goway: "Movilidad Montpellier TaM — horarios y rutas.",
+      card_numers: "Números de fotos y carpetas de jinetes, iPhone y Mac.",
       tagline_viewzy:
         "Viewzy es una app para iPad pensada para recorrer servidores de archivos en la red local, consultar medios y organizar selecciones con pocos gestos.",
       tagline_oculus:
         "Oculus es el estudio de vídeo nativo para Mac que eleva tu producción — de la captura al streaming, del montaje a la entrega final. Pensado para Apple Silicon, con interfaz sobria, pipelines independientes y control de nivel broadcast.",
       tagline_goway:
         "GOWAY es la app de movilidad de la Métropole de Montpellier. Usa datos abiertos TaM (GTFS / GTFS-RT) para salidas en tiempo real, rutas multimodales y guía paso a paso.",
+      tagline_numers:
+        "NUMERS relaciona los números de foto con los jinetes de un concurso. En iPhone anotas n.º foto → n.º atribuido. En Mac, el programa y las carpetas de fotos se clasifican solos.",
     },
     de: {
       nav_apps: "Apps",
@@ -195,7 +219,12 @@ window.PICAZA_I18N = {
       menu_apps: "Anwendungen",
       status_store: "Im App Store",
       status_soon: "Demnächst",
+      status_direct: "Direktinstallation",
       store_btn: "Im App Store ansehen",
+      install_ios: "Auf iPhone installieren",
+      install_mac: "Für Mac laden",
+      install_note:
+        "Die iPhone-Installation ist registrierten Geräten vorbehalten. Öffnen Sie diese Seite in Safari auf dem iPhone und vertrauen Sie der App unter Einstellungen → Allgemein → VPN und Geräteverwaltung.",
       privacy_btn: "Datenschutz",
       support_btn: "Support",
       privacy_hub_title: "Datenschutz",
@@ -218,12 +247,15 @@ window.PICAZA_I18N = {
       card_viewzy: "Lokale Server, Medien und Auswahl auf dem iPad.",
       card_oculus: "Mac-Videostudio — Aufnahme, Live, Schnitt, Konvertierung.",
       card_goway: "Montpellier TaM — Fahrpläne und Routen.",
+      card_numers: "Fotonummern und Reiterordner, iPhone und Mac.",
       tagline_viewzy:
         "Viewzy ist eine iPad-App zum einfachen Durchsuchen lokaler Dateiserver, zur Medienvorschau und zum Organisieren Ihrer Auswahl in wenigen Gesten.",
       tagline_oculus:
         "Oculus ist das native Mac-Videostudio, das Ihre Produktion hebt — von Aufnahme bis Stream, Schnitt bis finaler Auslieferung. Für Apple Silicon, mit klarer Profi-Oberfläche, unabhängigen Pipelines und Broadcast-Präzision.",
       tagline_goway:
         "GOWAY ist die Mobilitäts-App für die Métropole Montpellier. Sie nutzt TaM-Open-Data (GTFS / GTFS-RT) für Echtzeitabfahrten, multimodale Routen und Schritt-für-Schritt-Navigation.",
+      tagline_numers:
+        "NUMERS verknüpft Fotonummern mit Reitern eines Turniers. Am iPhone erfassen Sie Foto-Nr. → zugewiesene Nr. Am Mac ordnen sich Programm und Fotoordner von selbst.",
     },
     it: {
       nav_apps: "App",
@@ -248,7 +280,12 @@ window.PICAZA_I18N = {
       menu_apps: "Applicazioni",
       status_store: "Sull’App Store",
       status_soon: "Presto",
+      status_direct: "Installazione diretta",
       store_btn: "Vedi sull’App Store",
+      install_ios: "Installa su iPhone",
+      install_mac: "Scarica per Mac",
+      install_note:
+        "L’installazione iPhone è riservata ai dispositivi registrati. Apri questa pagina in Safari sull’iPhone, poi autorizza l’app in Impostazioni → Generali → VPN e gestione dispositivo.",
       privacy_btn: "Privacy",
       support_btn: "Supporto",
       privacy_hub_title: "Privacy",
@@ -271,12 +308,15 @@ window.PICAZA_I18N = {
       card_viewzy: "Server locali, media e selezioni su iPad.",
       card_oculus: "Studio video Mac — ripresa, live, montaggio, conversione.",
       card_goway: "Mobilità Montpellier TaM — orari e percorsi.",
+      card_numers: "Numeri foto e cartelle cavalieri, iPhone e Mac.",
       tagline_viewzy:
         "Viewzy è un’app iPad pensata per esplorare facilmente i server di file in rete locale, consultare i media e organizzare le selezioni in pochi gesti.",
       tagline_oculus:
         "Oculus è lo studio video nativo per Mac che eleva la tua produzione — dalla ripresa allo streaming, dal montaggio alla consegna finale. Pensato per Apple Silicon, con interfaccia sobria, pipeline indipendenti e precisione da regia broadcast.",
       tagline_goway:
         "GOWAY è l’app di mobilità per la Métropole di Montpellier. Usa i dati aperti TaM (GTFS / GTFS-RT) per partenze in tempo reale, percorsi multimodali e guida passo passo.",
+      tagline_numers:
+        "NUMERS collega i numeri delle foto ai cavalieri di un concorso. Su iPhone inserisci n. foto → n. attribuito. Su Mac, il programma e le cartelle foto si ordinano da soli.",
     },
     zh: {
       nav_apps: "应用",
@@ -300,7 +340,11 @@ window.PICAZA_I18N = {
       menu_apps: "应用",
       status_store: "已上架 App Store",
       status_soon: "即将推出",
+      status_direct: "直接安装",
       store_btn: "在 App Store 查看",
+      install_ios: "安装到 iPhone",
+      install_mac: "下载 Mac 版",
+      install_note: "iPhone 安装仅限已登记设备。请在 iPhone 的 Safari 打开本页，然后在 设置 → 通用 → VPN 与设备管理 中信任该应用。",
       privacy_btn: "隐私",
       support_btn: "支持",
       privacy_hub_title: "隐私",
@@ -323,9 +367,11 @@ window.PICAZA_I18N = {
       card_viewzy: "在 iPad 上浏览本地服务器、媒体与选集。",
       card_oculus: "Mac 视频工作室 — 采集、直播、剪辑、转换。",
       card_goway: "蒙彼利埃 TaM 出行 — 时刻表与路线。",
+      card_numers: "照片编号与骑手文件夹，iPhone 与 Mac。",
       tagline_viewzy: "Viewzy 是一款 iPad 应用，用于轻松浏览局域网文件服务器、查看媒体并以少量手势整理所选内容。",
       tagline_oculus: "Oculus 是面向 Mac 的原生视频工作室，提升你的制作流程 — 从拍摄到直播，从剪辑到最终交付。专为 Apple Silicon 打造，界面简洁专业，独立管线，具备广播级控制精度。",
       tagline_goway: "GOWAY 是蒙彼利埃都会区出行应用。基于 TaM 开放数据（GTFS / GTFS-RT），提供实时发车、多模式路线与逐步导航。",
+      tagline_numers: "NUMERS 将照片编号与赛事骑手对应。在 iPhone 上记录 照片号 → 分配号。在 Mac 上，秩序册与照片文件夹会自动整理。",
     },
     ar: {
       nav_apps: "التطبيقات",
@@ -350,7 +396,12 @@ window.PICAZA_I18N = {
       menu_apps: "التطبيقات",
       status_store: "على App Store",
       status_soon: "قريبًا",
+      status_direct: "تثبيت مباشر",
       store_btn: "عرض على App Store",
+      install_ios: "تثبيت على iPhone",
+      install_mac: "تنزيل لنظام Mac",
+      install_note:
+        "تثبيت iPhone مخصص للأجهزة المسجّلة. افتح هذه الصفحة في Safari على iPhone ثم اسمح بالتطبيق من الإعدادات → عام → VPN وإدارة الجهاز.",
       privacy_btn: "الخصوصية",
       support_btn: "الدعم",
       privacy_hub_title: "الخصوصية",
@@ -373,12 +424,15 @@ window.PICAZA_I18N = {
       card_viewzy: "تصفح الخوادم المحلية والوسائط على iPad.",
       card_oculus: "استوديو فيديو Mac — التقاط وبث ومونتاج وتحويل.",
       card_goway: "تنقّل مونبلييه TaM — جداول ومسارات.",
+      card_numers: "أرقام الصور ومجلدات الفرسان، iPhone وMac.",
       tagline_viewzy:
         "Viewzy تطبيق لـ iPad مصمّم لتصفح خوادم الملفات على الشبكة المحلية بسهولة، ومعاينة الوسائط وتنظيم اختياراتك ببضع إيماءات.",
       tagline_oculus:
         "Oculus استوديو فيديو أصلي لـ Mac يرتقي بإنتاجك — من التصوير إلى البث، ومن المونتاج إلى التسليم النهائي. مصمّم لـ Apple Silicon بواجهة احترافية ومسارات مستقلة ودقة بمستوى البث.",
       tagline_goway:
         "GOWAY تطبيق التنقّل لمتروبول مونبلييه. يعتمد على بيانات TaM المفتوحة (GTFS / GTFS-RT) لعرض المغادرات المباشرة والمسارات متعددة الوسائط والإرشاد خطوة بخطوة.",
+      tagline_numers:
+        "NUMERS يربط أرقام الصور بفرسان المسابقة. على iPhone تدخل رقم الصورة → الرقم المخصص. على Mac يُرتَّب البرنامج ومجلدات الصور تلقائيًا.",
     },
   },
 };

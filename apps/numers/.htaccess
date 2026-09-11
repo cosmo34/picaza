@@ -1,0 +1,3 @@
+AddType application/octet-stream .ipa
+AddType application/zip .zip
+AddType application/xml .plist

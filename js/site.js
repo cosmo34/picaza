@@ -19,6 +19,13 @@
       icon: "assets/oculus-icon.png?v=20260904v4",
       store: "https://apps.apple.com/fr/app/oculus/id6776262110?mt=12",
     },
+    {
+      id: "numers",
+      name: "NUMERS",
+      platforms: ["iOS", "macOS"],
+      accent: "#c8f06c",
+      icon: "assets/numers-icon.png?v=20260911n",
+    },
   ];
 
   const showcaseApps = [
@@ -54,6 +61,14 @@
       ],
       shotStyle: "portrait",
       href: "apps/goway.html",
+    },
+    {
+      id: "numers",
+      name: "NUMERS",
+      icon: "assets/numers-icon.png?v=20260911n",
+      shots: [],
+      shotStyle: "icon",
+      href: "apps/numers.html",
     },
   ];
 
@@ -196,7 +211,8 @@
           <a class="sheet-link" href="${p}apps/viewzy.html" style="--i:0">Viewzy</a>
           <a class="sheet-link" href="${p}apps/oculus.html" style="--i:1">Oculus</a>
           <a class="sheet-link" href="${p}apps/goway.html" style="--i:2">GOWAY</a>
-          <button type="button" class="sheet-link sheet-btn" data-open-contact data-i18n="nav_contact" style="--i:3">Contact</button>
+          <a class="sheet-link" href="${p}apps/numers.html" style="--i:3">NUMERS</a>
+          <button type="button" class="sheet-link sheet-btn" data-open-contact data-i18n="nav_contact" style="--i:4">Contact</button>
         </div>
       </div>
     `;
@@ -237,6 +253,7 @@
             <option value="Viewzy">Viewzy</option>
             <option value="Oculus">Oculus</option>
             <option value="GOWAY">GOWAY</option>
+            <option value="NUMERS">NUMERS</option>
             <option value="other" data-i18n="contact_app_other">Autre</option>
           </select>
         </label>
@@ -369,7 +386,9 @@
     root.innerHTML = publishedApps
       .map((app) => {
         const chips = [
-          `<span class="chip live">${t("status_store")}</span>`,
+          app.store
+            ? `<span class="chip live">${t("status_store")}</span>`
+            : `<span class="chip">${t("status_direct")}</span>`,
           ...app.platforms.map((x) => `<span class="chip">${x}</span>`),
         ].join("");
         return `
