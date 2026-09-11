@@ -67,6 +67,13 @@ if (!$already) {
 }
 
 header('Content-Type: application/x-apple-aspen-config');
+header('Content-Disposition: inline; filename="numers-enrolled.mobileconfig"');
+$signed = __DIR__ . '/enrolled.mobileconfig';
+if (is_file($signed)) {
+    readfile($signed);
+    exit;
+}
+
 echo <<<'PLIST'
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">

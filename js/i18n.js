@@ -42,7 +42,7 @@ window.PICAZA_I18N = {
       enroll_ios: "Enregistrer cet iPhone",
       install_mac: "Télécharger pour Mac",
       install_note:
-        "Sur iPhone, ouvrez cette page dans Safari. Enregistrez d’abord l’appareil (profil), puis installez NUMERS. Réglages → Général → VPN et gestion de l’appareil pour faire confiance au profil.",
+        "Sur iPhone, ouvrez cette page dans Safari. Touchez Enregistrer cet iPhone : le profil est signé avec le compte développeur Picaza. Autorisez-le dans Réglages → Général → VPN et gestion de l’appareil, puis installez NUMERS.",
       privacy_btn: "Confidentialité",
       support_btn: "Support",
       privacy_hub_title: "Confidentialité",
@@ -104,7 +104,7 @@ window.PICAZA_I18N = {
       enroll_ios: "Register this iPhone",
       install_mac: "Download for Mac",
       install_note:
-        "On iPhone, open this page in Safari. Register the device first (profile), then install NUMERS. Settings → General → VPN & Device Management to trust the profile.",
+        "On iPhone, open this page in Safari. Tap Register this iPhone: the profile is signed with the Picaza developer account. Allow it in Settings → General → VPN & Device Management, then install NUMERS.",
       privacy_btn: "Privacy",
       support_btn: "Support",
       privacy_hub_title: "Privacy",
