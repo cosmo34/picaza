@@ -16,11 +16,11 @@
 			<key>PayloadDisplayName</key>
 			<string>NUMERS</string>
 			<key>PayloadIdentifier</key>
-			<string>fr.picaza.numers.enrolled.webclip</string>
+			<string>fr.picaza.numers.enrolled.webclip.v2</string>
 			<key>PayloadType</key>
 			<string>com.apple.webClip.managed</string>
 			<key>PayloadUUID</key>
-			<string>C8E1D4A7-3B90-4F26-A15C-6D2E9B84F0A1</string>
+			<string>9F3A6C12-8B47-4E1D-A0C5-72D9E4B18F63</string>
 			<key>PayloadVersion</key>
 			<integer>1</integer>
 			<key>Precomposed</key>
@@ -34,7 +34,7 @@
 	<key>PayloadDisplayName</key>
 	<string>NUMERS — iPhone enregistré</string>
 	<key>PayloadIdentifier</key>
-	<string>fr.picaza.numers.enrolled</string>
+	<string>fr.picaza.numers.enrolled.v2</string>
 	<key>PayloadOrganization</key>
 	<string>Picaza</string>
 	<key>PayloadRemovalDisallowed</key>
@@ -42,7 +42,7 @@
 	<key>PayloadType</key>
 	<string>Configuration</string>
 	<key>PayloadUUID</key>
-	<string>B4A9D2F1-8C65-4E02-B7D3-98E1A4C6B5D7</string>
+	<string>D4B8E0C6-1F27-4A95-B3D2-8E6C0A47F159</string>
 	<key>PayloadVersion</key>
 	<integer>1</integer>
 </dict>
