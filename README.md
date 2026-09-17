@@ -49,6 +49,6 @@ Propagation DNS : quelques minutes à 48 h.
 - **Viewzy** — iPad, lien App Store + captures
 - **Oculus** — Mac, lien Mac App Store + captures (v2.0.7)
 - **GOWAY** — iOS / iPadOS, lien App Store (v1.1)
-- **NUMERS** — iPhone / Mac ; iOS en review App Store, zip Mac en téléchargement direct
+- **NUMERS** — iPhone / Mac ; lien App Store iOS + zip Mac en téléchargement direct
 
 Les captures Viewzy / Oculus / GOWAY sont tirées de la fiche publique App Store (API iTunes).

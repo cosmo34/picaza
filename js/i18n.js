@@ -42,7 +42,7 @@ window.PICAZA_I18N = {
       enroll_ios: "Enregistrer cet iPhone",
       install_mac: "Télécharger pour Mac",
       install_note:
-        "NUMERS iPhone et iPad arrivent sur l’App Store. En attendant, l’app Mac reste téléchargeable ci-dessous.",
+        "NUMERS iPhone et iPad est sur l’App Store. L’app Mac se télécharge ci-dessus.",
       privacy_btn: "Confidentialité",
       support_btn: "Support",
       privacy_hub_title: "Confidentialité",
@@ -104,7 +104,7 @@ window.PICAZA_I18N = {
       enroll_ios: "Register this iPhone",
       install_mac: "Download for Mac",
       install_note:
-        "NUMERS for iPhone and iPad is coming to the App Store. The Mac app can still be downloaded below.",
+        "NUMERS for iPhone and iPad is on the App Store. The Mac app can be downloaded above.",
       privacy_btn: "Privacy",
       support_btn: "Support",
       privacy_hub_title: "Privacy",
@@ -166,7 +166,7 @@ window.PICAZA_I18N = {
       enroll_ios: "Registrar este iPhone",
       install_mac: "Descargar para Mac",
       install_note:
-        "En iPhone, abra esta página en Safari. Registre primero el dispositivo (perfil) y luego instale NUMERS. Ajustes → General → VPN y gestión de dispositivos para confiar en el perfil.",
+        "NUMERS para iPhone e iPad está en el App Store. La app Mac se descarga más arriba.",
       privacy_btn: "Privacidad",
       support_btn: "Soporte",
       privacy_hub_title: "Privacidad",
@@ -228,7 +228,7 @@ window.PICAZA_I18N = {
       enroll_ios: "Dieses iPhone registrieren",
       install_mac: "Für Mac laden",
       install_note:
-        "Öffnen Sie diese Seite auf dem iPhone in Safari. Registrieren Sie das Gerät zuerst (Profil), dann installieren Sie NUMERS. Einstellungen → Allgemein → VPN und Geräteverwaltung, um dem Profil zu vertrauen.",
+        "NUMERS für iPhone und iPad ist im App Store. Die Mac-App können Sie oben herunterladen.",
       privacy_btn: "Datenschutz",
       support_btn: "Support",
       privacy_hub_title: "Datenschutz",
@@ -290,7 +290,7 @@ window.PICAZA_I18N = {
       enroll_ios: "Registra questo iPhone",
       install_mac: "Scarica per Mac",
       install_note:
-        "Su iPhone apri questa pagina in Safari. Registra prima il dispositivo (profilo), poi installa NUMERS. Impostazioni → Generali → VPN e gestione dispositivo per considerare attendibile il profilo.",
+        "NUMERS per iPhone e iPad è sull’App Store. L’app Mac si scarica sopra.",
       privacy_btn: "Privacy",
       support_btn: "Supporto",
       privacy_hub_title: "Privacy",
@@ -350,7 +350,7 @@ window.PICAZA_I18N = {
       install_ios: "安装到 iPhone",
       enroll_ios: "登记此 iPhone",
       install_mac: "下载 Mac 版",
-      install_note: "请在 iPhone 的 Safari 打开本页。先安装描述文件登记设备，再安装 NUMERS。在 设置 → 通用 → VPN 与设备管理 中信任该描述文件。",
+      install_note: "NUMERS 的 iPhone / iPad 版已上架 App Store。Mac 版可在上方下载。",
       privacy_btn: "隐私",
       support_btn: "支持",
       privacy_hub_title: "隐私",
@@ -408,7 +408,7 @@ window.PICAZA_I18N = {
       enroll_ios: "تسجيل هذا iPhone",
       install_mac: "تنزيل لنظام Mac",
       install_note:
-        "على iPhone افتح هذه الصفحة في Safari. سجّل الجهاز أولاً (الملف الشخصي) ثم ثبّت NUMERS. الإعدادات → عام → VPN وإدارة الجهاز للوثوق بالملف.",
+        "NUMERS لـ iPhone و iPad متوفر على App Store. يمكن تنزيل تطبيق Mac أعلاه.",
       privacy_btn: "الخصوصية",
       support_btn: "الدعم",
       privacy_hub_title: "الخصوصية",
