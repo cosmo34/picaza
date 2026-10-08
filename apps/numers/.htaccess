@@ -1,4 +1,5 @@
 AddType application/octet-stream .ipa
+AddType application/x-apple-diskimage .dmg
 AddType application/zip .zip
 AddType application/xml .plist
 AddType application/x-apple-aspen-config .mobileconfig
