@@ -6,7 +6,7 @@
     {
       id: "viewzy",
       name: "Viewzy",
-      platforms: ["iPadOS"],
+      platforms: ["iPadOS", "Android"],
       accent: "#00D0C8",
       icon: "assets/viewzy-icon.png?v=20260917a",
       store: "https://apps.apple.com/fr/app/viewzy/id6774137587",

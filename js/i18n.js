@@ -63,12 +63,12 @@ window.PICAZA_I18N = {
       about: "À propos",
       features: "Fonctionnalités",
       visuals: "Visuels",
-      card_viewzy: "Parcourir serveurs locaux, médias et sélections sur iPad.",
+      card_viewzy: "Parcourir serveurs locaux, médias et sélections sur iPad et tablette Android.",
       card_oculus: "Studio vidéo Mac — capture, live, montage, conversion.",
       card_goway: "Mobilité Montpellier TaM — horaires et itinéraires.",
       card_numers: "Numéros de photos et dossiers cavaliers, iPhone et Mac.",
       tagline_viewzy:
-        "Viewzy est une application iPad conçue pour parcourir facilement vos serveurs de fichiers sur le réseau local, consulter vos médias et organiser vos sélections en quelques gestes.",
+        "Viewzy est une application iPad et tablette Android conçue pour parcourir facilement vos serveurs de fichiers sur le réseau local, consulter vos médias et organiser vos sélections en quelques gestes.",
       tagline_oculus:
         "Oculus est le studio vidéo natif pour Mac qui élève votre production — de la prise de vue à la diffusion, du montage à la livraison finale. Pensé pour Apple Silicon, il offre une interface sobre et professionnelle, des pipelines indépendants et une précision de réglage digne d’une régie broadcast.",
       tagline_goway:
@@ -126,12 +126,12 @@ window.PICAZA_I18N = {
       about: "About",
       features: "Features",
       visuals: "Visuals",
-      card_viewzy: "Browse local servers, media and selections on iPad.",
+      card_viewzy: "Browse local servers, media and selections on iPad and Android tablet.",
       card_oculus: "Mac video studio — capture, live, edit, convert.",
       card_goway: "Montpellier TaM transit — schedules and routes.",
       card_numers: "Photo numbers and rider folders, iPhone and Mac.",
       tagline_viewzy:
-        "Viewzy is an iPad app designed to browse file servers on your local network, preview media and organize your selections in a few gestures.",
+        "Viewzy is an iPad and Android tablet app designed to browse file servers on your local network, preview media and organize your selections in a few gestures.",
       tagline_oculus:
         "Oculus is the native Mac video studio that elevates your production — from capture to streaming, editing to final delivery. Built for Apple Silicon, with a clean professional interface, independent pipelines and broadcast-grade control.",
       tagline_goway:
