@@ -35,6 +35,14 @@
       icon: "assets/numers-icon.png?v=20260917a",
       store: "https://apps.apple.com/fr/app/numers/id6811026740",
     },
+    {
+      id: "papaya",
+      name: "PAPAYA",
+      platforms: ["iOS", "iPadOS"],
+      accent: "#C6F135",
+      icon: "assets/papaya-icon.png?v=20261016a",
+      beta: true,
+    },
   ];
 
   const showcaseApps = [
@@ -225,7 +233,8 @@
           <a class="sheet-link" href="${p}apps/oculus.html" style="--i:1">Oculus</a>
           <a class="sheet-link" href="${p}apps/goway.html" style="--i:2">GOWAY</a>
           <a class="sheet-link" href="${p}apps/numers.html" style="--i:3">NUMERS</a>
-          <button type="button" class="sheet-link sheet-btn" data-open-contact data-i18n="nav_contact" style="--i:4">Contact</button>
+          <a class="sheet-link" href="${p}apps/papaya.html" style="--i:4">PAPAYA</a>
+          <button type="button" class="sheet-link sheet-btn" data-open-contact data-i18n="nav_contact" style="--i:5">Contact</button>
         </div>
       </div>
     `;
@@ -401,6 +410,8 @@
         const chips = [
           app.store
             ? `<span class="chip live">${t("status_store")}</span>`
+            : app.beta
+              ? `<span class="chip soon">${t("status_beta")}</span>`
             : app.soon
               ? `<span class="chip soon">${t("status_soon")}</span>`
               : `<span class="chip">${t("status_direct")}</span>`,

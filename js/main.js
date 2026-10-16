@@ -51,11 +51,29 @@ const apps = [
     "store": "https://apps.apple.com/fr/app/oculus/id6776262110?mt=12",
     "ascId": "6776262110",
     "ascState": "READY_FOR_SALE"
+  },
+  {
+    "id": "papaya",
+    "name": "PAPAYA",
+    "tagline": "Séances, repas et agenda du jour. Pas d’abonnement dans la bêta. Compte, photos et vidéos restent sur l’appareil.",
+    "platforms": [
+      "iOS",
+      "iPadOS"
+    ],
+    "status": "beta",
+    "statusLabel": "Bêta TestFlight",
+    "accent": "#C6F135",
+    "wide": false,
+    "icon": "assets/papaya-icon.png?v=20261016a",
+    "href": "apps/papaya.html",
+    "store": "",
+    "ascId": "",
+    "ascState": "PREPARE_FOR_SUBMISSION"
   }
 ];
 
 function isPublished(app) {
-  return Boolean(app.store) || app.ascState === "READY_FOR_SALE";
+  return Boolean(app.store) || app.ascState === "READY_FOR_SALE" || app.status === "beta";
 }
 
 function renderApps(root) {

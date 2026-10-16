@@ -69,5 +69,22 @@
     ],
     "supportUrl": "https://picaza.fr/support/oculus/",
     "keywords": "vidéo,capture,live,stream,RTMP,Twitch,YouTube,montage,ProRes,HEVC,AV1,enregistrement,Mac"
+  },
+  "papaya": {
+    "trackId": null,
+    "name": "PAPAYA",
+    "bundleId": "com.papaya.sante",
+    "url": "",
+    "version": "1.0",
+    "state": "PREPARE_FOR_SUBMISSION",
+    "description": "PAPAYA rassemble l’entraînement, les repas et l’agenda du jour. La bêta ne comporte pas d’abonnement. Le compte, les séances et les repas restent sur l’appareil.",
+    "icon": "assets/papaya-icon.png?v=20261016a",
+    "screenshots": [
+      "assets/papaya/01-accueil.jpg",
+      "assets/papaya/02-repas.jpg",
+      "assets/papaya/03-profil.jpg"
+    ],
+    "supportUrl": "https://picaza.fr/support/papaya/",
+    "keywords": "sport,recettes,nutrition,agenda,calories,entrainement,repas"
   }
 }

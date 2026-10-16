@@ -37,6 +37,7 @@ window.PICAZA_I18N = {
       status_store: "Sur l’App Store",
       status_soon: "Bientôt",
       status_direct: "Installation directe",
+      status_beta: "Bêta",
       store_btn: "Voir sur l’App Store",
       install_ios: "Installer sur iPhone",
       enroll_ios: "Enregistrer cet iPhone",
@@ -67,6 +68,7 @@ window.PICAZA_I18N = {
       card_oculus: "Studio vidéo Mac — capture, live, montage, conversion.",
       card_goway: "Mobilité Montpellier TaM — horaires et itinéraires.",
       card_numers: "Numéros de photos et dossiers cavaliers, iPhone et Mac.",
+      card_papaya: "Séances, repas et agenda. Bêta sans abonnement.",
       tagline_viewzy:
         "Viewzy est une application iPad et tablette Android conçue pour parcourir facilement vos serveurs de fichiers sur le réseau local, consulter vos médias et organiser vos sélections en quelques gestes.",
       tagline_oculus:
@@ -100,6 +102,7 @@ window.PICAZA_I18N = {
       status_store: "On the App Store",
       status_soon: "Coming soon",
       status_direct: "Direct install",
+      status_beta: "Beta",
       store_btn: "View on the App Store",
       install_ios: "Install on iPhone",
       enroll_ios: "Register this iPhone",
@@ -130,6 +133,7 @@ window.PICAZA_I18N = {
       card_oculus: "Mac video studio — capture, live, edit, convert.",
       card_goway: "Montpellier TaM transit — schedules and routes.",
       card_numers: "Photo numbers and rider folders, iPhone and Mac.",
+      card_papaya: "Workouts, meals and a daily agenda. Beta, no subscription.",
       tagline_viewzy:
         "Viewzy is an iPad and Android tablet app designed to browse file servers on your local network, preview media and organize your selections in a few gestures.",
       tagline_oculus:
@@ -163,6 +167,7 @@ window.PICAZA_I18N = {
       status_store: "En el App Store",
       status_soon: "Pronto",
       status_direct: "Instalación directa",
+      status_beta: "Beta",
       store_btn: "Ver en el App Store",
       install_ios: "Instalar en iPhone",
       enroll_ios: "Registrar este iPhone",
@@ -193,6 +198,7 @@ window.PICAZA_I18N = {
       card_oculus: "Estudio de vídeo Mac — captura, live, montaje, conversión.",
       card_goway: "Movilidad Montpellier TaM — horarios y rutas.",
       card_numers: "Números de fotos y carpetas de jinetes, iPhone y Mac.",
+      card_papaya: "Entrenos, comidas y agenda. Beta sin suscripción.",
       tagline_viewzy:
         "Viewzy es una app para iPad pensada para recorrer servidores de archivos en la red local, consultar medios y organizar selecciones con pocos gestos.",
       tagline_oculus:
@@ -226,6 +232,7 @@ window.PICAZA_I18N = {
       status_store: "Im App Store",
       status_soon: "Demnächst",
       status_direct: "Direktinstallation",
+      status_beta: "Beta",
       store_btn: "Im App Store ansehen",
       install_ios: "Auf iPhone installieren",
       enroll_ios: "Dieses iPhone registrieren",
@@ -256,6 +263,7 @@ window.PICAZA_I18N = {
       card_oculus: "Mac-Videostudio — Aufnahme, Live, Schnitt, Konvertierung.",
       card_goway: "Montpellier TaM — Fahrpläne und Routen.",
       card_numers: "Fotonummern und Reiterordner, iPhone und Mac.",
+      card_papaya: "Training, Mahlzeiten und Tagesplan. Beta ohne Abo.",
       tagline_viewzy:
         "Viewzy ist eine iPad-App zum einfachen Durchsuchen lokaler Dateiserver, zur Medienvorschau und zum Organisieren Ihrer Auswahl in wenigen Gesten.",
       tagline_oculus:
@@ -289,6 +297,7 @@ window.PICAZA_I18N = {
       status_store: "Sull’App Store",
       status_soon: "Presto",
       status_direct: "Installazione diretta",
+      status_beta: "Beta",
       store_btn: "Vedi sull’App Store",
       install_ios: "Installa su iPhone",
       enroll_ios: "Registra questo iPhone",
@@ -319,6 +328,7 @@ window.PICAZA_I18N = {
       card_oculus: "Studio video Mac — ripresa, live, montaggio, conversione.",
       card_goway: "Mobilità Montpellier TaM — orari e percorsi.",
       card_numers: "Numeri foto e cartelle cavalieri, iPhone e Mac.",
+      card_papaya: "Allenamenti, pasti e agenda. Beta senza abbonamento.",
       tagline_viewzy:
         "Viewzy è un’app iPad pensata per esplorare facilmente i server di file in rete locale, consultare i media e organizzare le selezioni in pochi gesti.",
       tagline_oculus:
@@ -351,6 +361,7 @@ window.PICAZA_I18N = {
       status_store: "已上架 App Store",
       status_soon: "即将推出",
       status_direct: "直接安装",
+      status_beta: "测试版",
       store_btn: "在 App Store 查看",
       install_ios: "安装到 iPhone",
       enroll_ios: "登记此 iPhone",
@@ -380,6 +391,7 @@ window.PICAZA_I18N = {
       card_oculus: "Mac 视频工作室 — 采集、直播、剪辑、转换。",
       card_goway: "蒙彼利埃 TaM 出行 — 时刻表与路线。",
       card_numers: "照片编号与骑手文件夹，iPhone 与 Mac。",
+      card_papaya: "训练、餐食与日程。测试版，无订阅。",
       tagline_viewzy: "Viewzy 是一款 iPad 应用，用于轻松浏览局域网文件服务器、查看媒体并以少量手势整理所选内容。",
       tagline_oculus: "Oculus 是面向 Mac 的原生视频工作室，提升你的制作流程 — 从拍摄到直播，从剪辑到最终交付。专为 Apple Silicon 打造，界面简洁专业，独立管线，具备广播级控制精度。",
       tagline_goway: "GOWAY 是蒙彼利埃都会区出行应用。基于 TaM 开放数据（GTFS / GTFS-RT），提供实时发车、多模式路线与逐步导航。",
@@ -409,6 +421,7 @@ window.PICAZA_I18N = {
       status_store: "على App Store",
       status_soon: "قريبًا",
       status_direct: "تثبيت مباشر",
+      status_beta: "تجريبي",
       store_btn: "عرض على App Store",
       install_ios: "تثبيت على iPhone",
       enroll_ios: "تسجيل هذا iPhone",
@@ -439,6 +452,7 @@ window.PICAZA_I18N = {
       card_oculus: "استوديو فيديو Mac — التقاط وبث ومونتاج وتحويل.",
       card_goway: "تنقّل مونبلييه TaM — جداول ومسارات.",
       card_numers: "أرقام الصور ومجلدات الفرسان، iPhone وMac.",
+      card_papaya: "تمارين ووجبات وجدول. نسخة تجريبية بلا اشتراك.",
       tagline_viewzy:
         "Viewzy تطبيق لـ iPad مصمّم لتصفح خوادم الملفات على الشبكة المحلية بسهولة، ومعاينة الوسائط وتنظيم اختياراتك ببضع إيماءات.",
       tagline_oculus:
