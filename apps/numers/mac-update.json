@@ -1,7 +1,7 @@
 {
   "version": "1.0",
-  "build": 55,
+  "build": 57,
   "url": "https://picaza.fr/apps/numers/NUMERS-mac.dmg",
-  "sha256": "2fad929a1ad3db616982efee636b67c062cfde68bd3c726c70a76e1602a6df1b",
-  "notes": "Mise à jour automatique depuis picaza.fr, retrait de l’entitlement localisation inutilisé, et correctifs récents Mac."
+  "sha256": "f7b3a60fd722793ab32494d6de7f5c66ff36eeb89b8f185f3ad2d0590741e77b",
+  "notes": "Envoyer les miniatures en planche contact (−50 %), aperçu avant envoi, et connexion d’un compte mail dans Réglages."
 }
