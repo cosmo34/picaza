@@ -2,4 +2,9 @@ AddType application/octet-stream .ipa
 AddType application/x-apple-diskimage .dmg
 AddType application/zip .zip
 AddType application/xml .plist
+AddType application/json .json
 AddType application/x-apple-aspen-config .mobileconfig
+Header set Cache-Control "no-cache" env=JSON
+<Files "mac-update.json">
+  Header set Cache-Control "no-cache, must-revalidate"
+</Files>

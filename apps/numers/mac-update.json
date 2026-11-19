@@ -1,0 +1,7 @@
+{
+  "version": "1.0",
+  "build": 55,
+  "url": "https://picaza.fr/apps/numers/NUMERS-mac.dmg",
+  "sha256": "2fad929a1ad3db616982efee636b67c062cfde68bd3c726c70a76e1602a6df1b",
+  "notes": "Mise à jour automatique depuis picaza.fr, retrait de l’entitlement localisation inutilisé, et correctifs récents Mac."
+}
