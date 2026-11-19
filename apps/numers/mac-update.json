@@ -1,7 +1,7 @@
 {
   "version": "1.0",
-  "build": 57,
+  "build": 58,
   "url": "https://picaza.fr/apps/numers/NUMERS-mac.dmg",
-  "sha256": "f7b3a60fd722793ab32494d6de7f5c66ff36eeb89b8f185f3ad2d0590741e77b",
-  "notes": "Envoyer les miniatures en planche contact (−50 %), aperçu avant envoi, et connexion d’un compte mail dans Réglages."
+  "sha256": "f3e909db565452add0c7e43835c1d4c97a6abd4c6e4203b6fb2589a951df1930",
+  "notes": "Comptes Mail macOS pour l’envoi des miniatures, aperçu planche contact, et réglages simplifiés."
 }
