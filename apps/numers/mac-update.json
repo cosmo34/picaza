@@ -1,7 +1,7 @@
 {
   "version": "1.0",
-  "build": 81,
+  "build": 84,
   "url": "https://picaza.fr/apps/numers/NUMERS-mac.dmg",
-  "sha256": "e80759482e8109d1fc23ad512a690cc5a355f270dd1a08f280ad8d5972e929a5",
-  "notes": "Mail planche contact : présentation PHOTOS & CO, grille 3 photos, textes haut/bas, images visibles."
+  "sha256": "425807294b387e3fe84aa9c6cc88a0d7e6d996686b0023d7148c660eb0b2b130",
+  "notes": "Suivi des mails envoyés (section Suivi), détail photos pleine/basse résolution, suppression du journal."
 }
