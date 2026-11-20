@@ -1,7 +1,7 @@
 {
   "version": "1.0",
-  "build": 59,
+  "build": 81,
   "url": "https://picaza.fr/apps/numers/NUMERS-mac.dmg",
-  "sha256": "eae02103470ef735d30db401552779d0fbb1fbcc6176c810f0e174e449058fe4",
-  "notes": "Planche contact en vraies vignettes (30 %), qualité allégée pour l’e-mail."
+  "sha256": "e80759482e8109d1fc23ad512a690cc5a355f270dd1a08f280ad8d5972e929a5",
+  "notes": "Mail planche contact : présentation PHOTOS & CO, grille 3 photos, textes haut/bas, images visibles."
 }
